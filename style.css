@@ -34,3 +34,13 @@ div {
     width: 1000px;
     height: auto; 
 }
+
+.quick-check-commercial {
+    width: 50vh;
+    height: auto; 
+}
+
+model-viewer {
+    height: inherit;
+    width: inherit; 
+}
