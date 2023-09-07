@@ -4,15 +4,29 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <h1>Quick Check® Commercial Inspection System</h1>
     <div class="quick-check" >
       <!--<a rel="ar" type="model/vnd.usdz+zip usdz" href="QR.usdz">
         <img src="brake-ace-productshot.png">
       </a>-->
-      <model-viewer src="qcc_906.glb" ar ar-scale="fixed" camera-controls touch-action="pan-y" ios-src="qcc-boxes-glb.usdz" xr-environment></model-viewer>
-      <a href="https://globalassets.hunter.com/download/assets/qcc-boxes-glb.usdz/21976ab04cef11eea17cbe9a089f77a3">
+      <model-viewer src="qcc_906.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="inspect-quickcheckcommercial-productshot.png" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+        </div>
+      </model-viewer>
+      <!--<model-viewer poster="inspect-quickcheckcommercial-productshot.png"
+      src="qcc_906.glb" ar ar-scale="fixed" camera-controls touch-action="pan-y" 
+      ios-src="qcc-boxes-glb.usdz"xr-environment></model-viewer>-->
+      <!--<a href="https://globalassets.hunter.com/download/assets/qcc-boxes-glb.usdz/21976ab04cef11eea17cbe9a089f77a3">
         <img src="inspect-quickcheckcommercial-productshot.png">
-      </a>
+      </a>-->
     </div>
   </body>
 </html>
