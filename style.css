@@ -39,3 +39,7 @@ model-viewer {
     width: 2000px;
     height: 800px; 
 }
+
+view-button {
+    color: red; 
+}
