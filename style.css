@@ -36,10 +36,6 @@ div {
 }
 
 model-viewer {
-    width: 2000px;
-    height: 800px; 
-}
-
-view-button {
-    color: red; 
+    width: 1000px;
+    height: 400px; 
 }
