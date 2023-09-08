@@ -39,3 +39,9 @@ model-viewer {
     width: 1000px;
     height: 400px; 
 }
+
+#ar-button {
+    background-color: #000000; 
+    border: 2px solid #ffffff; 
+    border-radius: 16px; 
+}
