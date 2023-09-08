@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Poppins:ital,wght@0,700;1,700&display=swap');
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -37,14 +36,24 @@ div {
 }
 
 model-viewer {
-    width: 1000px;
+    width: 100vw;
     height: 400px; 
 }
 
 #ar-button {
     background-color: #000000; 
+    color: #ffffff; 
     border: 2px solid #ffffff; 
     border-radius: 16px; 
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 14px;
+    font-size: 30px;
+    font-weight: 500; 
+    text-transform: uppercase; 
+    padding: 10px 20px; 
+}
+
+#ar-button img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 20px; 
 }
