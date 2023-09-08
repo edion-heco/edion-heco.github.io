@@ -37,7 +37,7 @@ div {
 
 model-viewer {
     width: 100vw;
-    height: 400px; 
+    height: 600px; 
 }
 
 #ar-button {
@@ -46,14 +46,15 @@ model-viewer {
     border: 2px solid #ffffff; 
     border-radius: 16px; 
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500; 
     text-transform: uppercase; 
-    padding: 10px 20px; 
+    padding: 20px 20px; 
+    object-position: right bottom; 
 }
 
 #ar-button img {
-    width: 30px; 
-    height: 30px; 
+    width: 40px; 
+    height: 40px; 
     margin-right: 20px; 
 }
