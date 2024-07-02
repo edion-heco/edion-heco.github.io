@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+:root {
+    --ds2v-color-black: #0D111A;
+    --ds2v-color-text: #1F2533;
+    --ds2v-color-white: #FFFFFF;
+    --ds2v-color-primary: #C00C00;
+    --ds2v-color-primary-dark: #A80B00;
+    --ds2v-color-primary-darker: #900900;
+    --ds2v-color-primary-darkest: #780800;
+    --ds2v-color-primary-light: #D86760;
+    --ds2v-color-primary-active: #D30D00;
+    --ds2v-color-neutral: #6B7280;
+    --ds2v-color-neutral-dark: #525866;
+    --ds2v-color-neutral-darker: #373F4D;
+    --ds2v-color-neutral-light: #BCC1CC;
+    --ds2v-color-neutral-lighter: #DDE2EB;
+    --ds2v-color-info: #0078bd;
+    --ds2v-color-info-dark: #000748;
+    --ds2v-color-info-light: #75eaeb;
+    --ds2v-color-success: #00C00C;
+    --ds2v-color-success-dark: #007808;
+    --ds2v-color-success-light: #60D867;
+    --ds2v-color-warning: #cb4d00;
+    --ds2v-color-warning-dark: #580000;
+    --ds2v-color-warning-light: #ffc729;
+    --ds2v-color-danger: #C00C00;
+    --ds2v-color-danger-dark: #780800;
+    --ds2v-color-danger-light: #D86760;
+  }
