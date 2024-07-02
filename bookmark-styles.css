@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
 :root {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+:root {
     --ds2v-color-black: #0D111A;
     --ds2v-color-text: #1F2533;
     --ds2v-color-white: #FFFFFF;
@@ -27,4 +35,14 @@
     --ds2v-color-danger: #C00C00;
     --ds2v-color-danger-dark: #780800;
     --ds2v-color-danger-light: #D86760;
+  }
+
+  body {
+    background-color: var(--ds2v-color-black); 
+    color: var(--ds2v-color-white);
+
+  }
+
+  h1 {
+    color: var(--ds2v-color-white);
   }
