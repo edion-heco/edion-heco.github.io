@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import"https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap";
 
 :root {
-    font-family: "Roboto Flex", sans-serif;
+    font-family: roboto flex v,sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+    font-variation-settings: "slnt" 0,"wdth" 70,"GRAD" 0,"XTRA" 468,"XOPQ" 96,"YOPQ" 79,"YTAS" 750,"YTDE" -203,"YTFI" 738,"YTLC" 514,"YTUC" 712;
 }
 
 :root {
@@ -35,14 +33,166 @@
     --ds2v-color-danger: #C00C00;
     --ds2v-color-danger-dark: #780800;
     --ds2v-color-danger-light: #D86760;
-  }
+}
 
-  body {
+body {
+    margin: 0; 
+    padding: 25px; 
     background-color: var(--ds2v-color-black); 
-    color: var(--ds2v-color-white);
+    color: var(--ds2v-color-white);  
+}
 
-  }
+.ds2u-font-heading-oversized {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    /* line-height: 3.5001rem */
+}
 
-  h1 {
-    color: var(--ds2v-color-white);
-  }
+.ds2u-font-heading-h1 {
+    margin: 0px; 
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    /* line-height: 2.5rem */
+}
+
+.ds2u-font-heading-h2 {
+    margin-bottom: 1.1rem; 
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+    /* line-height: 2.12499625rem */
+}
+
+.ds2u-font-heading-h3 {
+    margin: 0px; 
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.1rem;
+    /* line-height: 1.875005rem */
+}
+
+.ds2u-font-heading-h4 {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.125rem;
+    /* line-height: 1.62495rem */
+}
+
+.ds2u-font-heading-h5 {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    /* line-height: 1.5rem */
+}
+
+.ds2u-font-body-normal {
+    font-variation-settings: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    /* line-height: 1.5rem */
+}
+
+.ds2u-font-body-normal-bold {
+    font-variation-settings: normal;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    /* line-height: 1.5rem */
+}
+
+.ds2u-font-link-normal {
+    font-style: normal;
+    text-decoration-line: none;
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--ds2v-color-primary);
+    /* line-height: 1.38462rem */
+}
+
+.ds2u-font-link-normal:hover {
+    font-style: normal;
+    text-decoration-line: none;
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--ds2v-color-primary-dark);
+    /* line-height: 1.38462rem */
+}
+
+ul {
+    margin: 0px; 
+}
+
+.link-group {
+    padding: 10px 0px; 
+}
+
+.link-subgroup {
+    padding: 10px 0px; 
+}
+
+.underline:after {
+    display: block;
+    content: "     "; 
+    width: 50px; 
+    height: 3px; 
+    margin-top: .5rem; 
+    background: var(--ds2v-color-primary); 
+}
+
+/* @media(min-width: 992px) {
+    .ds2u-font-heading-oversized {
+        font-size:4rem;
+        line-height: 4.5rem
+    }
+
+    .ds2u-font-heading-h1 {
+        font-size:2.75rem;
+        line-height: 3.12499rem
+    }
+
+    .ds2u-font-heading-h2 {
+        font-size:2.25rem;
+        line-height: 2.74995rem
+    }
+
+    .ds2u-font-heading-h3 {
+        font-size:2rem;
+        line-height: 2.28572rem
+    }
+
+    .ds2u-font-heading-h4 {
+        font-size:1.375rem;
+        line-height: 2.00000625rem
+    }
+
+    .ds2u-font-heading-h5 {
+        font-size:1.125rem;
+        line-height: 1.62495rem
+    }
+
+    .ds2u-font-body-normal {
+        font-size:1.125rem;
+        line-height: 1.62495rem
+    }
+
+    .ds2u-font-body-normal-bold {
+        font-size:1.125rem;
+        line-height: 1.62495rem
+    }
+
+    .ds2u-font-link-normal {
+        font-size:1.125rem;
+        line-height: 1.5576975rem
+    }
+} */
+
+
