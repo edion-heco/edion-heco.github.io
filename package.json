@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "imagemapster": "^1.8.0",
+    "jquery": "^3.7.1"
+  }
+}

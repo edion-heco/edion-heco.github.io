@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Poppins:ital,wght@0,700;1,700&display=swap');
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; 
+    background-color: #000000;  
+    vertical-align: middle;
+} */
+
+area {
+    border: #000000 1px;
+    width: 100px;
+    height: 100px; 
+    background-color: green;
+}
