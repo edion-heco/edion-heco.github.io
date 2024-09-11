@@ -1,3 +1,5 @@
+// import { curve } from './leaflet.curve.js';
+
 var map = L.map('map', {
     maxZoom: 5, //how many times you can zoom in
     minZoom: 1, //how many times it is zoomed in (displays from a distance)
@@ -50,6 +52,24 @@ var adas = [{
             [9.2, 0]
         ]]
     }
+
+    // Attempting to add curves to GeoJSON format
+    // "type" : "Feature", 
+    // "properties": {
+    //     "adasType": "Radar",
+    //     "name": "Front Facing Radar",
+    //     "description": "A temporary short sentence about front facing radar technology.",
+    //     "show_on_map": true
+    // }, 
+    // "geometry": {
+    //     "type": "Curve", 
+    //     "coordinates": [[
+    //         'M',[0, 9.2],
+    // 'L',[36, 86],
+    // 'C',[36, 86],[0, 110],[-36, 86],'Z'
+    //     ]]
+    // }
+
 }, {
     "type" : "Feature", 
     "properties": {
@@ -67,15 +87,6 @@ var adas = [{
         ]]
     }
 }];
-
-// L.geoJSON(adas, {
-//     style: function(feature) {
-//         switch (feature.properties.adasType) {
-//             case 'Radar': return {color: "#00C00C"};
-//             case 'Camera':   return {color: "#C00C00"};
-//         }
-//     }
-// }).addTo(map);
 
 var geojson; 
 
@@ -121,6 +132,11 @@ function onEachFeature(feature, layer) {
     });
     layer.bindPopup('<h1>'+ feature.properties.name + '</h1>&nbsp;<p>' + feature.properties.description + '</p>')
 }
+
+var path = L.curve(['M',[0, 9.2],
+    'L',[36, 86],
+    'C',[36, 86],[0, 110],[-36, 86],'Z'],
+    {color:'yellow',fill:true}).addTo(map);
 
 var geojson = L.geoJson(adas, {
     filter: function(feature, layer) {
