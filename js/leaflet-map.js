@@ -51,25 +51,7 @@ var adas = [{
             [86, -36],
             [9.2, 0]
         ]]
-    }
-
-    // Attempting to add curves to GeoJSON format
-    // "type" : "Feature", 
-    // "properties": {
-    //     "adasType": "Radar",
-    //     "name": "Front Facing Radar",
-    //     "description": "A temporary short sentence about front facing radar technology.",
-    //     "show_on_map": true
-    // }, 
-    // "geometry": {
-    //     "type": "Curve", 
-    //     "coordinates": [[
-    //         'M',[0, 9.2],
-    // 'L',[36, 86],
-    // 'C',[36, 86],[0, 110],[-36, 86],'Z'
-    //     ]]
-    // }
-
+    } 
 }, {
     "type" : "Feature", 
     "properties": {
@@ -88,6 +70,23 @@ var adas = [{
     }
 }];
 
+    // ***Attempting to add curves to GeoJSON format***
+    // "type" : "Feature", 
+    // "properties": {
+    //     "adasType": "Radar",
+    //     "name": "Front Facing Radar",
+    //     "description": "A temporary short sentence about front facing radar technology.",
+    //     "show_on_map": true
+    // }, 
+    // "geometry": {
+    //     "type": "Curve", 
+    //     "coordinates": [[
+    //         'M',[0, 9.2],
+    // 'L',[36, 86],
+    // 'C',[36, 86],[0, 110],[-36, 86],'Z'
+    //     ]]
+    // }
+
 var geojson; 
 
 function getColor(type) {
@@ -98,10 +97,13 @@ function getColor(type) {
 
 function style(feature) {
     return {
-        fillColor: getColor(feature.properties.adasType),
-        color: getColor(feature.properties.adasType),
+        // fillColor: getColor(feature.properties.adasType),
+        // fillColor: '#EBEEF5',
+        // color: getColor(feature.properties.adasType),
+        color: '#EBEEF5',
         weight: 2,
-        fillOpacity: 0.25
+        fillOpacity: 0.25,
+        fill: true
     };
 }
 
@@ -120,6 +122,7 @@ function resetHighlight(e) {
     geojson.resetStyle(e.target);
 }
 
+// ***Semi-functional function to zoom in to the polygon that you click***
 // function zoomToFeature(e) {
 //     map.fitBounds(e.target.getBounds());
 // }
@@ -133,18 +136,64 @@ function onEachFeature(feature, layer) {
     layer.bindPopup('<h1>'+ feature.properties.name + '</h1>&nbsp;<p>' + feature.properties.description + '</p>')
 }
 
-var path = L.curve(['M',[0, 9.2],
-    'L',[36, 86],
-    'C',[36, 86],[0, 110],[-36, 86],'Z'],
-    {color:'yellow',fill:true}).addTo(map);
 
-var geojson = L.geoJson(adas, {
+// ***FUNCTIONING CURVE without additional functions***
+// var path = L.curve(['M',[0, 9.2],
+//     'L',[36, 86],
+//     'C',[36, 86],[0, 110],[-36, 86],'Z'],
+//     {color:'yellow',fill:true}).addTo(map);
+
+// ***FUNCTIONING CURVE***
+// var path = L.curve(['M',[0, 9.2],
+//     'L',[36, 86],
+//     'C',[36, 86],[0, 110],[-36, 86],'Z'], {
+//         filter: function(feature, layer) {
+//             return feature.properties.show_on_map;
+//         },
+//         style: style,
+//         onEachFeature: onEachFeature,
+//         color: '#00C00C'
+//     }).addTo(map);
+ 
+
+var path = L.curve(['M', [0, 9.2], 'L',[36, 86], 'C',[36, 86],[0, 110],[-36, 86],'Z'], {
     filter: function(feature, layer) {
         return feature.properties.show_on_map;
     },
     style: style,
     onEachFeature: onEachFeature,
-}).addTo(map);
+    // color: '#00C00C',
+    fill: true
+}).addTo(map); 
+
+var renderedPath = document.getElementsByTagName('path')[0];
+renderedPath.id = 'curve-path';
+
+const newPath = document.getElementById('curve-path'); 
+newPath.addEventListener("mouseover", (event) => {
+    event.target.style.fill = "#000000"; 
+    event.target.style.stroke = "#000000"; 
+    event.target.bindPopup('<h1>Title</h1>&nbsp;<p>description</p>')
+})
+
+newPath.addEventListener("mouseout", (event) => {
+    event.target.style.fill = "#00C00C"; 
+    event.target.style.stroke = "#00C00C"; 
+})
+
+
+// console.log(adas); 
+console.log(typeof(path)); 
+console.log(path); 
+
+// ***Adds geojson regular triangle polygons***
+// var geojson = L.geoJson(adas, {
+//     filter: function(feature, layer) {
+//         return feature.properties.show_on_map;
+//     },
+//     style: style,
+//     onEachFeature: onEachFeature,
+// }).addTo(map);
 
 
 

@@ -9,3 +9,8 @@ body {
 #map { height: 500px; }
 
 .leaflet-container { background: #FFFFFF !important }
+
+#path:hover {
+    color: #C00C00; 
+}
+
