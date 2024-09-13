@@ -170,15 +170,19 @@ var renderedPath = document.getElementsByTagName('path')[0];
 renderedPath.id = 'curve-path';
 
 const newPath = document.getElementById('curve-path'); 
-newPath.addEventListener("mouseover", (event) => {
-    event.target.style.fill = "#000000"; 
-    event.target.style.stroke = "#000000"; 
-    event.target.bindPopup('<h1>Title</h1>&nbsp;<p>description</p>')
-})
+// newPath.addEventListener("mouseover", (event) => {
+//     event.target.style.fill = "#000000"; 
+//     event.target.style.stroke = "#000000"; 
+// })
 
-newPath.addEventListener("mouseout", (event) => {
-    event.target.style.fill = "#00C00C"; 
-    event.target.style.stroke = "#00C00C"; 
+// newPath.addEventListener("mouseout", (event) => {
+//     event.target.style.fill = "#00C00C"; 
+//     event.target.style.stroke = "#00C00C"; 
+// })
+
+newPath.addEventListener("onclick", (event) => {
+    window.alert("Popup"); 
+    event.target.layer.bindPopup('<h1>Title</h1>&nbsp;<p>description</p>');
 })
 
 

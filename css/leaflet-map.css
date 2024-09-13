@@ -1,3 +1,6 @@
+:root {
+    --ds2v-color-success: #00C00C; 
+}
 body {
     display: flex;
     flex-direction: column;
@@ -10,7 +13,19 @@ body {
 
 .leaflet-container { background: #FFFFFF !important }
 
-#path:hover {
-    color: #C00C00; 
+#curve-path {
+    fill: var(--ds2v-color-success);
+    stroke: var(--ds2v-color-success);
+    fill-opacity: 0.2; 
+}
+
+#curve-path:hover {
+    fill-opacity: 0.4;  
+    stroke-width: 5; 
+}
+
+#curve-path:is(:active, :focus) {
+    fill: #000000; 
+    stroke: #000000;
 }
 
