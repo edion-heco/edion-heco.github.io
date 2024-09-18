@@ -1,0 +1,72 @@
+:root {
+    --camera-color: #00C00C; 
+    --radar-color: #C00C00; 
+    --ultrasound-color: #0300c0; 
+}
+
+body {
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+}
+
+.oem-hidden {
+    display: none; 
+}
+
+.svg-shape {
+    border-radius: 2rem;  
+}
+
+#camera {
+    fill: var(--camera-color); 
+    fill-opacity: 0.5;
+    stroke:var(--camera-color); 
+    stroke-width: 3px;
+}
+
+#camera:hover {
+    fill-opacity: 0.8;
+    stroke-width: 5px; 
+}
+
+#radar {
+    fill: var(--radar-color); 
+    fill-opacity: 0.5;
+    stroke: var(--radar-color); 
+    stroke-width: 3px;
+}
+
+#radar:hover {
+    fill-opacity: 0.8;
+    stroke-width: 5px; 
+}
+
+.button-row {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 2rem; 
+}
+
+.oem-button {
+    height: 50px; 
+    width: 100px; 
+}
+
+/* svg {
+    display:block;
+    width:40%; height:auto;
+    margin:0 auto;
+  }
+  polygon {  
+    fill:#ccc;
+    stroke:#fff; stroke-width:0.3;
+    transition: fill .15s;
+  }
+  a:hover .teal { fill:teal; }
+  a:hover .pink { fill:pink; }
+  a:focus .teal, 
+  a:focus .pink { fill:orange; } */
