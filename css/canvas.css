@@ -12,6 +12,12 @@ body {
     justify-content: center;  
 }
 
+button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
 .oem-hidden {
     display: none; 
 }
