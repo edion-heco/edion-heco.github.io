@@ -12,16 +12,6 @@ body {
     justify-content: center;  
 }
 
-button {
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
-
-.oem-hidden {
-    display: none; 
-}
-
 .svg-shape {
     border-radius: 2rem;  
 }
@@ -50,6 +40,10 @@ button {
     stroke-width: 5px; 
 }
 
+.oem-hidden {
+    display: none; 
+}
+
 .button-row {
     display: flex;
     align-items: center; 
@@ -58,21 +52,28 @@ button {
 }
 
 .oem-button {
-    height: 50px; 
-    width: 100px; 
+    height: 100px !important;
+    width: 100px !important;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
-/* svg {
-    display:block;
-    width:40%; height:auto;
-    margin:0 auto;
-  }
-  polygon {  
-    fill:#ccc;
-    stroke:#fff; stroke-width:0.3;
-    transition: fill .15s;
-  }
-  a:hover .teal { fill:teal; }
-  a:hover .pink { fill:pink; }
-  a:focus .teal, 
-  a:focus .pink { fill:orange; } */
+.split-btn {
+    width: 50%;
+    transform: rotateY('45')
+}
+
+.split-btn > img {
+    max-width: 38px;
+    max-height: 38px;
+}
+
+.diagonal {
+    position: absolute;
+    z-index: 1; 
+    width: 1.5px; 
+    height: 100px; 
+    background-color: #EBEEF5;
+    transform: rotate(45deg); 
+}
