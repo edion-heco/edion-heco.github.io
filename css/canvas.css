@@ -54,6 +54,7 @@ body {
 .oem-button {
     height: 100px !important;
     width: 100px !important;
+    padding: 20px 12px !important;
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -67,6 +68,8 @@ body {
 .split-btn > img {
     max-width: 50px;
     max-height: 50px;
+    min-width: 30px; 
+    min-height: 30px
 }
 
 .diagonal {
