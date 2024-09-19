@@ -65,15 +65,15 @@ body {
 }
 
 .split-btn > img {
-    max-width: 38px;
-    max-height: 38px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .diagonal {
     position: absolute;
     z-index: 1; 
-    width: 1.5px; 
-    height: 100px; 
-    background-color: #EBEEF5;
+    width: 1px; 
+    height: 85px; 
+    background-color: #888E9A;
     transform: rotate(45deg); 
 }
