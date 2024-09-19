@@ -6,19 +6,19 @@
     </head>
     <body>
         <h1 class="ds2u-font-heading-h1">What is ADAS?</h1>
-        <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600" style="background: url('./align-adas-explainer.jpg'); background-size: 1200px auto; background-repeat: no-repeat;">
-            <a href="frontradar.html"><path id="camera" class="svg-shape toyota" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z"></a>
-            <a href="frontradar.html"><path id="radar" class="svg-shape toyota" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"></a>
-            <a href="frontradar.html"><path id="radar" class="svg-shape toyota" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
-            <a href="frontradar.html"><path id="camera" class="svg-shape toyota" d="M 510 365 L 450 160 Q 587.5 85, 725 160 L 650 365 Z"></a>
-            <a href="frontradar.html"><path id="radar" class="svg-shape honda oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
-            <a href="frontradar.html"><path id="camera" class="svg-shape honda oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"></a>
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600" style="background: url('https://globalassets.hunter.com/images/assets/align-adas-explainer-01-faded.jpg/Zz1lNGNhODZjNjc2OTExMWVmYmMwMGFlMjZkNmI3ZTAxYQ=='); background-size: 1200px auto; background-repeat: no-repeat;">
+            <!-- Toyota -->
+            <a href="frontradar.html"><path id="radar" name="Side Radar" class="svg-shape toyota" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z"></a>
+            <a href="frontradar.html"><path id="camera" name="Front-Facing Radar" class="svg-shape toyota" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"></a>
+            <a href="frontradar.html"><path id="camera" name="Front-Facing Radar" class="svg-shape toyota honda" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
+            <a href="frontradar.html"><path id="radar" name="Side Radar" class="svg-shape toyota" d="M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"></a>
+            
+            <!-- Honda -->
+            <!-- <a href="frontradar.html"><path id="radar" class="svg-shape honda oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a> -->
+                <a href="frontradar.html"><path id="radar" class="svg-shape nissan oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
+                <a href="frontradar.html"><path id="camera" class="svg-shape honda oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"></a>
         </svg>
         <div class="button-row">
-            <!-- <button aria="button" id="toyotaBtn" class="ds2c-button ds2m-secondary-dark"><Toyota></button> -->
-            <!-- <button aria="button" id="hondaBtn" class="ds2c-button ds2m-secondary-dark">Honda</button> -->
-            <!-- <button aria="button" id="nissanBtn" class="ds2c-button ds2m-secondary-dark" style="height: 100px; width: 100px;">Nissan</button> -->
-
             <button aria="button" id="toyotaBtn" class="ds2c-button ds2m-secondary-dark" style="height: 100px; width: 100px;"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-toyota-color.png/Zz1mNzllMjdjY2FiZjIxMWVlYjllNmQyY2FjODMzZjkzMw==" style="max-width: 75px; max-height: 75px;"></button>
             <button aria="button" id="hondaBtn" class="ds2c-button ds2m-secondary-dark" style="height: 100px; width: 100px;"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-honda-color.png/Zz1mODNmOGY1ZWFiZjIxMWVlYTI5OTg2MDkzNjdlODEzYw==" style="max-width: 75px; max-height: 75px;"></button>
             <button aria="button" id="nissanBtn" class="ds2c-button ds2m-secondary-dark" style="height: 100px; width: 100px;"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-nissan-color.png/Zz1mOTk3MWNkMmFiZjIxMWVlODhjMDY2ZmZjOWRlYzA5OA==" style="max-width: 75px; max-height: 75px;"></button>
@@ -36,7 +36,7 @@
                 if (svgShapes[i].classList.contains(oem)) {
                     svgShapes[i].classList.remove("oem-hidden") 
                 } else {
-                    svgShapes[i].classList.toggle("oem-hidden"); 
+                    svgShapes[i].classList.add("oem-hidden"); 
                 }
             }
         }
@@ -47,6 +47,10 @@
 
         hondaBtn.addEventListener("click", function() {
             toggleOem("honda"); 
+        });
+
+        nissanBtn.addEventListener("click", function() {
+            toggleOem("nissan"); 
         });
 
     </script>
