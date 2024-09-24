@@ -10,17 +10,25 @@
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600" style="background: url('https://globalassets.hunter.com/images/assets/align-adas-explainer-01-faded.jpg/Zz1lNGNhODZjNjc2OTExMWVmYmMwMGFlMjZkNmI3ZTAxYQ=='); background-size: 1200px auto; background-repeat: no-repeat;">
             <!-- Toyota -->
             <defs>
-                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#00C00C35" />
-                  <stop offset="100%" stop-color="#00C00C" />
+                <linearGradient id="camera-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00C00C25" />
+                    <stop offset="100%" stop-color="#00C00C" />
                 </linearGradient>
-              </defs>
+                <linearGradient id="radar-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#C00C0035" />
+                    <stop offset="100%" stop-color="#C00C00" />
+                </linearGradient>
+                <linearGradient id="camera-right-left" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00C00C" />
+                    <stop offset="100%" stop-color="#00C00C25" />
+                </linearGradient>
+            </defs>
 
-            <a href="frontradar.html"><path id="camera-experiment" name="Side Radars" fill="url(#grad4)" class="svg-shape toyota" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"></a>
-            <a href="frontradar.html"><path id="camera" name="Front-Facing Camera Dash" class="svg-shape toyota" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"></a>
-            <a href="frontradar.html"><path id="camera" name="Front-Facing Camera Front" class="svg-shape toyota honda" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
-            <a href="frontradar.html"><path id="radar"  name="Front-Facing Radar" class="svg-shape nissan oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
-            <a href="frontradar.html"><path id="camera" name="Back-Facing Camera" class="svg-shape honda oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"></a>
+            <a href="frontradar.html"><path id="camera" name="Side Radars" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"></a>
+            <a href="frontradar.html"><path id="camera" name="Front-Facing Camera Dash" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"></a>
+            <a href="frontradar.html"><path id="camera" name="Front-Facing Camera Front" fill="url(#camera-left-right)" class="svg-shape toyota honda" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
+            <a href="frontradar.html"><path id="radar"  name="Front-Facing Radar" fill="url(#radar-left-right)" class="svg-shape nissan oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
+            <a href="frontradar.html"><path id="camera" name="Back-Facing Camera" fill="url(#camera-right-left)" class="svg-shape honda oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"></a>
         </svg>
 
         <div class="button-row">
@@ -61,37 +69,8 @@
             </button>
 
             <button id="gmBtn" class="oem-button ds2c-button ds2m-secondary-dark"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-gm-black.png/Zz1mOGY0YzY2MmFiZjIxMWVlODgwZjIyMjEyZDg0ZjJhNA==" style="max-width: 75px; max-height: 75px;"></button>
-
         </div>
+
     </body>
-    <script>
-        var svgShapes = document.getElementsByClassName("svg-shape"); 
-
-        var toyotaBtn = document.getElementById("toyotaBtn"); 
-        var hondaBtn = document.getElementById("hondaBtn"); 
-        var nissanBtn = document.getElementById("nissanBtn"); 
-
-        function toggleOem(oem) {
-            for (let i = 0; i < svgShapes.length; i++) {
-                if (svgShapes[i].classList.contains(oem)) {
-                    svgShapes[i].classList.remove("oem-hidden") 
-                } else {
-                    svgShapes[i].classList.add("oem-hidden"); 
-                }
-            }
-        }
-        
-        toyotaBtn.addEventListener("click", function() {
-            toggleOem("toyota"); 
-        });
-
-        hondaBtn.addEventListener("click", function() {
-            toggleOem("honda"); 
-        });
-
-        nissanBtn.addEventListener("click", function() {
-            toggleOem("nissan"); 
-        });
-
-    </script>
+    <script src="js/adas-display.js"></script>
 </html>

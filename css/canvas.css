@@ -20,41 +20,21 @@ body {
 }
 
 #camera {
-    fill: var(--camera-color); 
-    fill-opacity: 0.5;
-    stroke:var(--camera-color); 
-    stroke-width: 3px;
-}
-
-#camera:hover {
-    transition: fill-opacity .15s; 
-    fill-opacity: 0.8;
-    stroke-width: 5px; 
-}
-
-#camera-experiment {
     fill-opacity: 0.75;
     stroke:var(--camera-color); 
     stroke-width: 3px;
 }
 
-#camera-experiment:hover {
-    transition: fill-opacity .25s, stroke-width .25s; 
-    fill-opacity: 1;
-    stroke-width: 5px;
-}
-
 #radar {
-    fill: var(--radar-color); 
-    fill-opacity: 0.5;
-    stroke: var(--radar-color); 
+    fill-opacity: 0.75;
+    stroke:var(--radar-color); 
     stroke-width: 3px;
 }
 
-#radar:hover {
-    transition: fill-opacity .15s; 
-    fill-opacity: 0.8;
-    stroke-width: 5px; 
+#camera:hover, #radar:hover{
+    transition: fill-opacity .25s, stroke-width .25s; 
+    fill-opacity: 1;
+    stroke-width: 5px;
 }
 
 .oem-hidden {
