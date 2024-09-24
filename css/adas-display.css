@@ -29,7 +29,6 @@ body {
 .key {
     height: 25px;
     width: 25px; 
-    opacity: 0.75; 
 }
 
 .key.camera { 

@@ -3,6 +3,16 @@ var svgShapes = document.getElementsByClassName("svg-shape");
 var toyotaBtn = document.getElementById("toyotaBtn"); 
 var hondaBtn = document.getElementById("hondaBtn"); 
 var nissanBtn = document.getElementById("nissanBtn"); 
+var subaruBtn = document.getElementById("subaruBtn"); 
+var hyundaiBtn = document.getElementById("hyundaiBtn"); 
+var chryslerBtn = document.getElementById("chryslerBtn"); 
+var mazdaBtn = document.getElementById("mazdaBtn"); 
+var fordBtn = document.getElementById("fordBtn"); 
+var gmBtn = document.getElementById("gmBtn"); 
+
+const oems = ["toyota", "honda", "nissan", "subaru", "hyundai", "chrysler", "mazda", "ford", "gm"];
+const oemBtns = document.getElementsByClassName("oem-button");
+
 
 function toggleOem(oem) { 
     for (let i = 0; i < svgShapes.length; i++) {
@@ -13,15 +23,9 @@ function toggleOem(oem) {
         }
     }
 }
-        
-toyotaBtn.addEventListener("click", function() {
-    toggleOem("toyota"); 
-});
 
-hondaBtn.addEventListener("click", function() {
-    toggleOem("honda"); 
-});
-
-nissanBtn.addEventListener("click", function() {
-    toggleOem("nissan"); 
-});
+for (let i = 0; i < oemBtns.length; i++) {
+    oemBtns[i].addEventListener("click", function() {
+        toggleOem(oems[i]); 
+    });
+}
