@@ -15,8 +15,12 @@
                     <stop offset="100%" stop-color="#00C00C" />
                 </linearGradient>
                 <linearGradient id="radar-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#C00C0035" />
-                    <stop offset="100%" stop-color="#C00C00" />
+                    <stop offset="0%" stop-color="#0089CF35" />
+                    <stop offset="100%" stop-color="#0089CF" />
+                </linearGradient>
+                <linearGradient id="ultrasound-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#FDB91335" />
+                    <stop offset="100%" stop-color="#FDB913" />
                 </linearGradient>
                 <linearGradient id="camera-right-left" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stop-color="#00C00C" />
@@ -26,9 +30,11 @@
 
             <a href="frontradar.html"><path id="camera" name="Side Radars" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"></a>
             <a href="frontradar.html"><path id="camera" name="Front-Facing Camera Dash" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"></a>
-            <a href="frontradar.html"><path id="camera" name="Front-Facing Camera Front" fill="url(#camera-left-right)" class="svg-shape toyota honda" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
-            <a href="frontradar.html"><path id="radar"  name="Front-Facing Radar" fill="url(#radar-left-right)" class="svg-shape nissan oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
+            <a href="frontradar.html"><path id="radar" name="Front-Facing Radar" fill="url(#radar-left-right)" class="svg-shape toyota nissan" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
+            <a href="frontradar.html"><path id="camera"  name="Front-Facing Camera Front" fill="url(#camera-left-right)" class="svg-shape honda oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
             <a href="frontradar.html"><path id="camera" name="Back-Facing Camera" fill="url(#camera-right-left)" class="svg-shape honda oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"></a>
+            <!-- <a href="frontradar.html"><path id="ultrasound" name="Front Ultrasound" fill="url(#camera-right-left)" class="svg-shape nissan oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"></a> -->
+            <a href="frontradar.html"><path id="ultrasound" name="Back Ultrasound" fill="url(#ultrasound-left-right)" class="svg-shape toyota" d="M 475 240 C 360 110, 360 490, 475 360 L 440 352 Q 418 300, 440 248 Z"></a>
         </svg>
 
         <div class="button-row">

@@ -1,7 +1,7 @@
 :root {
     --camera-color: #00C00C; 
-    --radar-color: #C00C00; 
-    --ultrasound-color: #0300c0; 
+    --radar-color: #0089CF; 
+    --ultrasound-color: #FDB913; 
 }
 
 html { height: 100vh; }
@@ -31,7 +31,13 @@ body {
     stroke-width: 3px;
 }
 
-#camera:hover, #radar:hover{
+#ultrasound{
+    fill-opacity: 0.75;
+    stroke:var(--ultrasound-color); 
+    stroke-width: 3px;
+}
+
+#camera:hover, #radar:hover, #ultrasound:hover {
     transition: fill-opacity .25s, stroke-width .25s; 
     fill-opacity: 1;
     stroke-width: 5px;
