@@ -18,6 +18,11 @@
   }
 }
 
+@font-face {
+  font-family: "Roboto Flex V";
+  src: url(../roboto-flex-variable.ttf);
+}
+
 :root {
   font-family: "Roboto Flex V",sans-serif;
   font-optical-sizing: auto;
