@@ -1,0 +1,8 @@
+.ds2c-modal-container {
+    @include popup-background;
+    display: none;
+
+    &:has(.ds2m-active.ds2c-modal) {
+        display: flex;
+    }
+}

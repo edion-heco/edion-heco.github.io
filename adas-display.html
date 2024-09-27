@@ -3,6 +3,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/adas-display.css">
+        <link rel="stylesheet" href="scss/_modal-container.scss">
+        <link rel="stylesheet" href="scss/_modal.scss">
+        <link rel="stylesheet" href="scss/_popup.scss">
     </head>
     <body>
         <h1 class="ds2u-font-heading-h1">What is ADAS?</h1>
@@ -43,13 +46,21 @@
                 </linearGradient>
             </defs>
 
-            <a href="frontradar.html"><path id="camera" name="Side Radars" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"></a>
-            <a href="frontradar.html"><path id="camera" name="Front-Facing Camera Dash" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"></a>
-            <a href="frontradar.html"><path id="radar" name="Front-Facing Radar" fill="url(#radar-left-right)" class="svg-shape toyota nissan" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
-            <a href="frontradar.html"><path id="camera"  name="Front-Facing Camera Front" fill="url(#camera-left-right)" class="svg-shape honda oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"></a>
-            <a href="frontradar.html"><path id="camera" name="Back-Facing Camera" fill="url(#camera-right-left)" class="svg-shape honda oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"></a>
-            <a href="frontradar.html"><path id="ultrasound" name="Back Ultrasound" fill="url(#ultrasound-left-right)" class="svg-shape toyota" d="M 475 240 C 360 110, 360 490, 475 360 C 413 370, 413 230, 475 240 Z"></a>
+            <path id="camera" name="Side Radars" data-linked-modal="side-radar-modal" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"/>
+            <path id="camera" name="Front-Facing Camera Dash" fill="url(#camera-left-right)" class="svg-shape toyota" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"/>
+            <path id="radar" name="Front-Facing Radar" fill="url(#radar-left-right)" class="svg-shape toyota nissan" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"/>
+            <path id="camera"  name="Front-Facing Camera Front" fill="url(#camera-left-right)" class="svg-shape honda oem-hidden" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"/>
+            <path id="camera" name="Back-Facing Camera" fill="url(#camera-right-left)" class="svg-shape honda oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"/>
+            <path id="ultrasound" name="Back Ultrasound" fill="url(#ultrasound-left-right)" class="svg-shape toyota" d="M 475 240 C 360 110, 360 490, 475 360 C 413 370, 413 230, 475 240 Z"/>
         </svg>
+
+        <div class="ds2c-modal" id="side-radar-modal">
+            <div class="ds2u-popup-close-button"></div>
+            <h1>Hello I am a modal</h1>
+            <p>hello this is a paragraph</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <button class="ds2c-button ds2m-secondary-dark ds2s-close-button">close modal</button>
+        </div>
 
         <div class="button-row">
             <button id="hondaBtn" class="oem-button ds2c-button ds2m-secondary-dark">
@@ -92,5 +103,8 @@
         </div>
 
     </body>
+
+    <script src="https://dsgnsystmcssdev110b9785.blob.core.windows.net/hunterds2-latest/ds2-main.js"></script>
     <script src="js/adas-display.js"></script>
+    
 </html>

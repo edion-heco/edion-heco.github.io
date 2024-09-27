@@ -1,0 +1,8 @@
+.ds2c-modal {
+    @include popup-content;
+    display: none;
+
+    &.ds2m-active {
+        display: block;
+    }
+}
