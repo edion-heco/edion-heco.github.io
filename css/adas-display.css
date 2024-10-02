@@ -26,16 +26,28 @@ body {
     gap: 1.5rem; 
 }
 
-.camera { 
-    background-color: var(--camera-color); 
+.camera {
+    --ds2f-default-color: var(--camera-color);
+    --ds2f-hover-color: #15ce22;
+    --ds2f-active-color: #009009;
+    --ds2f-focus-border-color: #40D049;
+    --ds2f-focus-color: #00A80B;
 }
 
-.radar { 
-    background-color: var(--radar-color); 
+.radar {
+    --ds2f-default-color: var(--radar-color);
+    --ds2f-hover-color: #07a0ec;
+    --ds2f-active-color: #036ea3;
+    --ds2f-focus-border-color: #2bb8ff;
+    --ds2f-focus-color: #0382c2;
 }
 
-.ultrasound { 
-    background-color: var(--ultrasound-color); 
+.ultrasound {
+    --ds2f-default-color: var(--ultrasound-color);
+    --ds2f-hover-color: #EC951A;
+    --ds2f-active-color: #c97500;
+    --ds2f-focus-border-color: #ffb246;
+    --ds2f-focus-color: #EC951A;
 }
 
 .svg-shape {
