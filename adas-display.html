@@ -3,26 +3,27 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/adas-display.css">
+        <!-- <link rel="stylesheet" href="css/adas-display.scss"> -->
         <link rel="stylesheet" href="scss/_modal-container.scss">
         <link rel="stylesheet" href="scss/_modal.scss">
         <link rel="stylesheet" href="scss/_popup.scss">
     </head>
     <body>
-        <h1 class="ds2u-font-heading-h1">What is ADAS?</h1>
+        <h1 class="ds2u-font-heading-oversized" style="margin: 10;">What is ADAS?</h1>
 
-        <div class="color-key">
-            <div class="color-key-group">
-                <div class="key camera"></div>
-                <h5 class="ds2u-font-heading-h5">Camera</h5>
-            </div>
-            <div class="color-key-group">
-                <div class="key radar"></div>
-                <h5 class="ds2u-font-heading-h5">Radar</h5>
-            </div>
-            <div class="color-key-group">
-                <div class="key ultrasound"></div>
-                <h5 class="ds2u-font-heading-h5">Ultrasound</h5>
-            </div>
+        <div class="button-row">
+            <button class="ds2c-button ds2m-primary icon-last camera">
+                <div class="ds2s-button-image"><img style="max-height: 30px; max-width: 30px;" src="https://globalassets.hunter.com/images/assets/icon-camera-white.svg/Zz1mMmMwYzM3YTZhOWIxMWVkYTIzM2NlOWJmNTgyYzk3OA=="></div>
+                Camera
+            </button>
+            <button class="ds2c-button ds2m-primary icon-last radar">
+                <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-reflector-white.svg/Zz1lZDI3OGExNDM4NTExMWVlOTc2MDVlNjJiNzAwZmM3Mw=="></div>
+                Radar
+            </button>
+            <button class="ds2c-button ds2m-primary icon-last ultrasound">
+                <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-front-white.svg/Zz1lZDI4ZmJjZTM4NTExMWVlODAzZmRlOGE4NGRjMzEzNg=="></div>
+                Ultrasound
+            </button>
         </div>
 
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600" style="background: url('https://globalassets.hunter.com/images/assets/align-adas-explainer-01-faded.jpg/Zz1lNGNhODZjNjc2OTExMWVmYmMwMGFlMjZkNmI3ZTAxYQ=='); background-size: 1200px auto; background-repeat: no-repeat;">
@@ -56,8 +57,29 @@
 
         <div id="side-radar-modal" class="ds2c-modal">
             <div class="ds2u-popup-close-button"></div>
-            <h2 class="ds2u-font-heading-h2">Side Radars</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <div class="content-layout">
+                <div class="section one">
+                    <h2 class="ds2u-font-heading-h2">Side Radars</h2>
+                    <div class="paragraph">
+                        <h4 class="ds2u-font-heading-h4" style="margin: 0px;">What It Is</h4>
+                        <p style="margin: 0px;">Description</p>
+                    </div>
+                    <div class="paragraph">
+                        <h4 class="ds2u-font-heading-h4" style="margin: 0px;">What It Does</h4>
+                        <p style="margin: 0px;">Description</p>
+                    </div>
+                    <div class="paragraph">
+                        <h4 class="ds2u-font-heading-h4" style="margin: 0px;">How to Service / Calibration Time</h4>
+                        <ul style="margin: 0px;">
+                            <li>OEM Time: <strong class="red-text">~30 mins</strong></li>
+                            <li>Hunter UA Time: <strong class="green-text">~3 mins</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section two">
+                    <img src="https://globalassets.hunter.com/images/assets/learn-align-adas-explainer-APA.jpg/Zz03OTI0MTExYTM4NzMxMWVlOTY2MzJhOWViOTZiOWM4OQ==?quality=90&width=700">
+                </div>
+            </div>
         </div>
 
         <div id="front-camera-modal" class="ds2c-modal">

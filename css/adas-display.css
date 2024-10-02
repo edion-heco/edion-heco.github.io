@@ -27,22 +27,18 @@ body {
 }
 
 .key {
-    height: 25px;
     width: 25px; 
 }
 
-.key.camera { 
-    outline: 3px solid var(--camera-color);
+.camera { 
     background-color: var(--camera-color); 
 }
 
-.key.radar { 
-    outline: 3px solid var(--radar-color); 
+.radar { 
     background-color: var(--radar-color); 
 }
 
-.key.ultrasound { 
-    outline: 3px solid var(--ultrasound-color); 
+.ultrasound { 
     background-color: var(--ultrasound-color); 
 }
 
@@ -73,6 +69,27 @@ body {
     transition: fill-opacity .25s, stroke-width .25s; 
     fill-opacity: 1;
     stroke-width: 5px;
+}
+
+.content-layout {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap-reverse; 
+    width: 100%;
+    align-items: center; 
+}
+
+.section {
+    width: 50%; 
+}
+
+.section.two > img {
+    width: 100%; 
+    height: auto; 
+}
+
+.paragraph {
+    margin: 1.5rem 0rem; 
 }
 
 .oem-hidden {

@@ -6017,3 +6017,11 @@
 .ds2c-modal.ds2m-active {
   display: block
 }
+
+.green-text {
+  color: var(--ds2v-color-success); 
+}
+
+.red-text {
+  color: var(--ds2v-color-primary); 
+}
