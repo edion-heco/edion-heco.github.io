@@ -26,10 +26,6 @@ body {
     gap: 1.5rem; 
 }
 
-.key {
-    width: 25px; 
-}
-
 .camera { 
     background-color: var(--camera-color); 
 }
