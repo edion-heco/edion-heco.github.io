@@ -9,25 +9,56 @@
         <link rel="stylesheet" href="scss/_popup.scss">
     </head>
     <body>
+        <!-- <div class="nav-control hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div id="nav">
+            <div class="nav-control x">
+                <div class="x bar"></div>
+                <div class="x bar"></div>
+            </div>
+            <h3 class="ds2u-font-heading-h3 white-text" style="margin: 0px;">Explore Hunter ADAS</h3>
+            <button class="ds2c-button ds2m-secondary-light">Ultimate ADAS</button>
+            <button class="ds2c-button ds2m-secondary-light">ADAS Lookup Guide</button>
+            <button class="ds2c-button">Let's Talk</button>
+        </div> -->
+        
         <h1 class="ds2u-font-heading-oversized" style="margin: 10;">What is ADAS?</h1>
 
         <div class="button-row">
-            <button class="camera ds2c-button icon-last">
+            <button class="componentBtn camera ds2c-button icon-last" data-linked-modal="camera-modal">
                 <div class="ds2s-button-image"><img style="max-height: 30px; max-width: 30px;" src="https://globalassets.hunter.com/images/assets/icon-camera-white.svg/Zz1mMmMwYzM3YTZhOWIxMWVkYTIzM2NlOWJmNTgyYzk3OA=="></div>
                 Camera
             </button>
-            <button class="radar ds2c-button icon-last">
+            <button class="componentBtn radar ds2c-button icon-last" data-linked-modal="radar-modal">
                 <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-reflector-white.svg/Zz1lZDI3OGExNDM4NTExMWVlOTc2MDVlNjJiNzAwZmM3Mw=="></div>
                 Radar
             </button>
-            <button class="ultrasound ds2c-button icon-last">
+            <button class="componentBtn ultrasound ds2c-button icon-last" data-linked-modal="ultrasound-modal">
                 <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-front-white.svg/Zz1lZDI4ZmJjZTM4NTExMWVlODAzZmRlOGE4NGRjMzEzNg=="></div>
                 Ultrasound
             </button>
         </div>
 
+        <div id="camera-modal" class="ds2c-modal">
+            <div class="ds2u-popup-close-button"></div>
+            <h2 class="ds2u-font-heading-h2">Camera Information</h2>
+        </div>
+
+        <div id="radar-modal" class="ds2c-modal">
+            <div class="ds2u-popup-close-button"></div>
+            <h2 class="ds2u-font-heading-h2">Radar Information</h2>
+        </div>
+
+        <div id="ultrasound-modal" class="ds2c-modal">
+            <div class="ds2u-popup-close-button"></div>
+            <h2 class="ds2u-font-heading-h2">Ultrasound Information</h2>
+        </div>
+
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600" style="background: url('https://globalassets.hunter.com/images/assets/align-adas-explainer-01-faded.jpg/Zz1lNGNhODZjNjc2OTExMWVmYmMwMGFlMjZkNmI3ZTAxYQ=='); background-size: 1200px auto; background-repeat: no-repeat;">
-            <!-- Toyota -->
             <defs>
                 <linearGradient id="camera-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stop-color="#00C00C25" />
@@ -126,9 +157,9 @@
             </button>
 
             <button id="toyotaBtn" class="oem-button ds2c-button ds2m-secondary-dark">
-                <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-lexus-secondary-color.png/Zz1mOGEwYTRkOGFiZjIxMWVlODg4ZTc2Mzg0Y2QwZjQ3Yw==">
+                <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-toyota-color.png/Zz1mNzllMjdjY2FiZjIxMWVlYjllNmQyY2FjODMzZjkzMw==">
                 <!-- <div class="diagonal"></div> -->
-                <img class="split-btn" style="align-self: flex-end;"src="https://globalassets.hunter.com/images/assets/logo-customer-oem-toyota-color.png/Zz1mNzllMjdjY2FiZjIxMWVlYjllNmQyY2FjODMzZjkzMw==">
+                <img class="split-btn" style="align-self: flex-end;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-lexus-secondary-color.png/Zz1mOGEwYTRkOGFiZjIxMWVlODg4ZTc2Mzg0Y2QwZjQ3Yw==">
             </button>
 
             <button id="subaruBtn" class="oem-button ds2c-button ds2m-secondary-dark"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-subaru-stacked-color.png/Zz1mNzk2NTQzNGFiZjIxMWVlYWIxN2Q2YmRjMWI0ZmQ3Mw==" style="max-width: 75px; max-height: 75px;"></button>

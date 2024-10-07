@@ -1,4 +1,5 @@
 //SVG Script
+var componentButtons = document.getElementsByClassName("componentBtn"); 
 var svgShapes = document.getElementsByClassName("svg-shape"); 
 
 var toyotaBtn = document.getElementById("toyotaBtn"); 
@@ -36,6 +37,10 @@ var modalContainers = document.getElementsByClassName("ds2c-modal-container");
 var modals = document.getElementsByClassName("ds2c-modal"); 
 
 var modalContainer = modalContainers[0]; 
+
+for (let i = 0; i < componentButtons.length; i++) {
+    modalContainer.initModal(document.getElementById(componentButtons[i].getAttribute("data-linked-modal")), componentButtons[i]);
+}
 
 for (let i = 0; i < svgShapes.length; i++) {
     modalContainer.initModal(document.getElementById(svgShapes[i].getAttribute("data-linked-modal")), svgShapes[i]);

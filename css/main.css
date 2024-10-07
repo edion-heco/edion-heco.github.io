@@ -6025,3 +6025,7 @@
 .red-text {
   color: var(--ds2v-color-primary); 
 }
+
+.white-text {
+  color: var(--ds2v-color-white); 
+}
