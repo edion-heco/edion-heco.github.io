@@ -1,3 +1,19 @@
+var navToggle = document.getElementById("nav-control"); 
+var nav = document.getElementById("nav")
+
+function toggleNav() {
+    if (nav.classList.contains("hidden")) {
+        nav.classList.remove("hidden")
+    } else {
+        nav.classList.add("hidden")
+    }
+}
+
+navToggle.addEventListener("click", function() {
+    toggleNav(); 
+});
+
+
 //SVG Script
 var componentButtons = document.getElementsByClassName("componentBtn"); 
 var svgShapes = document.getElementsByClassName("svg-shape"); 
