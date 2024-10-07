@@ -12,7 +12,7 @@ var mazdaBtn = document.getElementById("mazdaBtn");
 var fordBtn = document.getElementById("fordBtn"); 
 var gmBtn = document.getElementById("gmBtn"); 
 
-const oems = ["toyota", "honda", "nissan", "subaru", "hyundai", "chrysler", "mazda", "ford", "gm"];
+const oems = ["mercedes", "jaguar", "bmw", "honda", "nissan", "toyota", "subaru", "hyundai", "chrysler", "mazda", "ford", "gm", "vw", "mitsubishi"];
 const oemBtns = document.getElementsByClassName("oem-button");
 
 
