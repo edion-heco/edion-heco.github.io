@@ -140,12 +140,15 @@ body {
 
 .button-row {
     display: flex;
+    max-width: 1200px; 
+    flex-wrap: wrap;
     align-items: center; 
     justify-content: center; 
     gap: 2rem; 
 }
 
 .oem-button {
+    margin: 0px !important; 
     height: 100px !important;
     width: 100px !important;
     padding: 15px 15px !important;
@@ -182,12 +185,21 @@ body {
     transform: rotate(45deg); 
 }
 
-#hyundaiBtn {
+.oem-button.three {
     flex-wrap: wrap; 
     gap: 10px 10px;
 }
 
-#hyundaiBtn > img {
+.oem-button.three > img {
     max-width: 50px;
     max-height: 50px;
+}
+
+.oem-button.four {
+    flex-wrap: wrap; 
+    gap: 5px 5px;
+}
+
+.oem-button.four > img {
+    max-width: 30px;
 }
