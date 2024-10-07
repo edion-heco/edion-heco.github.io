@@ -16,13 +16,10 @@ body {
 
 #nav {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 5rem 2rem; 
-    gap: 2rem; 
     top: 0; 
     left: 0; 
     height: 100vh;
+    max-height: 100%; 
     background-color: #0D111A;
 }
 
@@ -36,6 +33,13 @@ body {
     height: 30px; 
     width: 35px; 
     justify-content: space-between; 
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 2rem; 
+    gap: 2rem;
 }
 
 .bar {
