@@ -6,7 +6,6 @@ navToggle.addEventListener("click", function() {
     nav.setAttribute('class', isOpen ? "nav-hidden" : "nav-open");
 });
 
-
 //SVG Script
 var componentButtons = document.getElementsByClassName("componentBtn"); 
 var svgShapes = document.getElementsByClassName("svg-shape"); 

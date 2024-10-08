@@ -24,6 +24,10 @@
                 <button class="ds2c-button">Let's Talk</button>
             </div>
         </div>
+
+        <video autoplay muted loop id="background-video">
+            <source src="https://globalassets.hunter.com/download/assets/ADAS-App-Background-RoadCars-Vignette.mp4/d8283dfa85a011efa7be064e6f3513dc?attachment=false" type="video/mp4">
+        </video>
         
         <h1 class="ds2u-font-heading-oversized" style="margin: 10;">What is ADAS?</h1>
 
@@ -57,7 +61,8 @@
             <h2 class="ds2u-font-heading-h2">Ultrasound Information</h2>
         </div>
 
-        <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600" style="background: url('https://globalassets.hunter.com/images/assets/align-adas-explainer-01-faded.jpg/Zz1lNGNhODZjNjc2OTExMWVmYmMwMGFlMjZkNmI3ZTAxYQ=='); background-size: 1200px auto; background-repeat: no-repeat;">
+        <!-- <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600" style="background: url('https://globalassets.hunter.com/images/assets/align-adas-explainer-01-faded.jpg/Zz1lNGNhODZjNjc2OTExMWVmYmMwMGFlMjZkNmI3ZTAxYQ=='); background-size: 1200px auto; background-repeat: no-repeat;"> -->
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="1200" height="600">
             <defs>
                 <linearGradient id="camera-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stop-color="#00C00C25" />
@@ -77,36 +82,51 @@
                 </linearGradient>
             </defs>
 
-            <path id="radar" name="Side Radars" data-linked-modal="side-radar-modal" fill="url(#radar-left-right)" class="svg-shape honda" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"/>
-            <path id="camera" name="Front-Facing Camera Dash" data-linked-modal="front-camera-modal" fill="url(#camera-left-right)" class="svg-shape honda" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"/>
-            <path id="camera"  name="Front-Facing Camera Front" data-linked-modal="front-camera-modal2" fill="url(#camera-left-right)" class="svg-shape honda toyota" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"/>
-            <path id="camera" name="Back-Facing Camera" data-linked-modal="back-camera-modal" fill="url(#camera-right-left)" class="svg-shape toyota oem-hidden" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"/>
+            <path id="camera" name="Side Cameras" data-linked-modal="surround-view-modal" fill="url(#camera-left-right)" class="svg-shape honda" d="M 510 235 L 450 160 Q 587.5 85, 725 160 L 650 235 Z M 510 365 L 450 440 Q 587.5 515, 725 440 L 650 365 Z"/>
+            <path id="radar" name="Front-Facing Radar" data-linked-modal="front-radar-modal" fill="url(#radar-left-right)" class="svg-shape honda" d="M 770 300 L 960 192 Q 1010 301, 960 410 Z"/>
+            <path id="camera"  name="Front-Facing Camera Front" data-linked-modal="front-camera-modal" fill="url(#camera-left-right)" class="svg-shape honda toyota" d="M 628 300 L 860 192 Q 910 301, 860 410 Z"/>
+            <path id="camera" name="Back-Facing Camera" data-linked-modal="back-camera-modal" fill="url(#camera-right-left)" class="svg-shape toyota" d="M 430 300 L 330 200 Q 250 300, 330 400 Z"/>
             <path id="ultrasound" name="Back Ultrasound" data-linked-modal="back-ultrasound-modal" fill="url(#ultrasound-left-right)" class="svg-shape honda toyota nissan" d="M 475 240 C 360 110, 360 490, 475 360 C 413 370, 413 230, 475 240 Z"/>
         </svg>
 
-        <div id="side-radar-modal" class="ds2c-modal">
+        <div id="surround-view-modal" class="ds2c-modal">
             <div class="ds2u-popup-close-button"></div>
-            <div class="content-layout">
-                <div class="section one">
-                    <h2 class="ds2u-font-heading-h2">Side Radars</h2>
-                    <div class="paragraph">
-                        <h4 class="ds2u-font-heading-h4" style="margin: 0px;">What It Is</h4>
-                        <p style="margin: 0px;">Description</p>
+            <div class="modal-content">
+                <h2 class="ds2u-font-heading-h2">Surround View</h2>
+                <div class="content-layout">
+                    <div class="section one">
+                        <div class="paragraph">
+                            <h4 class="ds2u-font-heading-h4" style="margin: 0px;">What It Is</h4>
+                            <p style="margin: 0px;">
+                                Surround view cameras on the side of the vehicle, working in unison with the front and back camera systems, provide a 360&deg; view that allows the driver to avoid obstructions. 
+                            </p>
+                        </div>
                     </div>
-                    <div class="paragraph">
-                        <h4 class="ds2u-font-heading-h4" style="margin: 0px;">What It Does</h4>
-                        <p style="margin: 0px;">Description</p>
-                    </div>
-                    <div class="paragraph">
-                        <h4 class="ds2u-font-heading-h4" style="margin: 0px;">How to Service / Calibration Time</h4>
-                        <ul style="margin: 0px;">
-                            <li>OEM Time: <strong class="red-text">~30 mins</strong></li>
-                            <li>Hunter UA Time: <strong class="green-text">~3 mins</strong></li>
-                        </ul>
+                    <div class="section two">
+                        <img src="https://globalassets.hunter.com/images/assets/Learn-ADAS-Component-Camera-Side-01.jpg/Zz0wNWYzMGIyMjg0YmUxMWVmYTIyNzZhNmJiM2UyOTM5NA==">
                     </div>
                 </div>
-                <div class="section two">
-                    <img src="https://globalassets.hunter.com/images/assets/learn-align-adas-explainer-APA.jpg/Zz03OTI0MTExYTM4NzMxMWVlOTY2MzJhOWViOTZiOWM4OQ==?quality=90&width=700">
+
+                <div class="content-layout">
+                    <div class="section one">
+                        <div class="paragraph">
+                            <h4 class="ds2u-font-heading-h4" style="margin: 0px;">What It Does</h4>
+                            <p style="margin: 0px;">
+                                Surround view cameras assist in 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section two">
+                        <img src="https://globalassets.hunter.com/images/assets/Learn-ADAS-Feature-SurroundView-01.jpg/Zz0wNWY3MDdmZTg0YmUxMWVmYWY3NzhhZDUzMWY1MDBjZQ==">
+                    </div>
+                </div>
+                
+                <div class="paragraph">
+                    <h4 class="ds2u-font-heading-h4" style="margin: 0px;">Service / Calibration Time</h4>
+                    <ul style="margin: 0px;">
+                        <li>OEM Time: <strong class="red-text">~30 mins</strong></li>
+                        <li>Hunter Ultimate ADAS&reg; Time: <strong class="green-text">~3 mins</strong></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -117,9 +137,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
         </div>
 
-        <div id="front-camera-modal2" class="ds2c-modal">
+        <div id="front-radar-modal" class="ds2c-modal">
             <div class="ds2u-popup-close-button"></div>
-            <h2 class="ds2u-font-heading-h2">Front-Facing Cameras</h2>
+            <h2 class="ds2u-font-heading-h2">Front-Facing Radar</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
         </div>
 
@@ -131,7 +151,7 @@
 
         <div id="back-ultrasound-modal" class="ds2c-modal">
             <div class="ds2u-popup-close-button"></div>
-            <h2 class="ds2u-font-heading-h2">Back-Facing Ultrasounds</h2>
+            <h2 class="ds2u-font-heading-h2">Park Assist</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
         </div>
 

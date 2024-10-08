@@ -12,6 +12,7 @@ body {
     flex-direction: column;  
     align-items: center;  
     justify-content: center;  
+    background-image: url("https://globalassets.hunter.com/download/assets/ADAS-App-Background-RoadCars-Vignette.mp4/d8283dfa85a011efa7be064e6f3513dc?attachment=false");
 }
 
 @keyframes fadeIn {
@@ -26,6 +27,14 @@ body {
 @keyframes slide-out {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-100%); }
+}
+
+#background-video {
+    position: fixed; 
+    
+    min-width: 100%; 
+    min-height: 100%; 
+    z-index: -1;
 }
 
 .nav-hidden{
@@ -144,19 +153,27 @@ body {
     stroke-width: 5px;
 }
 
+.modal-content {
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    width: 100%;
+    gap: 2.5rem; 
+}
+
 .content-layout {
     display: flex; 
     flex-direction: row; 
-    flex-wrap: wrap-reverse; 
+    flex-wrap: wrap; 
     width: 100%;
-    align-items: center; 
+    align-items: center;  
 }
 
 .section {
     width: 50%; 
 }
 
-.section.two > img {
+.section > img {
     width: 100%; 
     height: auto; 
 }
