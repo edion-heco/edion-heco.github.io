@@ -1,3 +1,4 @@
+//Navigation Script
 var navToggle = document.getElementById("nav-control"); 
 var nav = document.getElementById("nav");
 
@@ -5,6 +6,12 @@ navToggle.addEventListener("click", function() {
     var isOpen = nav.classList.contains("nav-open"); 
     nav.setAttribute('class', isOpen ? "nav-hidden" : "nav-open");
 });
+
+//OEM List JSON Parsing
+var oemList = document.getElementById("oem-list"); 
+fetch('../components.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 
 //SVG Script
 var componentButtons = document.getElementsByClassName("componentBtn"); 
