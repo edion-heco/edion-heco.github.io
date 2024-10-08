@@ -1,16 +1,9 @@
 var navToggle = document.getElementById("nav-control"); 
-var nav = document.getElementById("nav")
-
-function toggleNav() {
-    if (nav.classList.contains("hidden")) {
-        nav.classList.remove("hidden")
-    } else {
-        nav.classList.add("hidden")
-    }
-}
+var nav = document.getElementById("nav");
 
 navToggle.addEventListener("click", function() {
-    toggleNav(); 
+    var isOpen = nav.classList.contains("nav-open"); 
+    nav.setAttribute('class', isOpen ? "nav-hidden" : "nav-open");
 });
 
 

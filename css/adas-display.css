@@ -24,13 +24,16 @@ body {
 }
 
 @keyframes slide-out {
-    0% { transform: translateX(-100%); }
-    /* 100% { transform: translateX(-100%); } */
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
 }
 
-.hidden{
-    display: none !important;  
-    animation: slide-out 0.5s backwards; 
+.nav-hidden{
+    animation: slide-out 0.5s forwards; 
+}
+
+.nav-open {
+    animation: slide-in 0.5s forwards; 
 }
 
 #nav {
@@ -40,8 +43,7 @@ body {
     height: 100vh;
     max-height: 100%; 
     transform: translateX(-100%); 
-    background-color: #0D111A;
-    animation: slide-in 0.5s forwards; 
+    background-color: #0D111A;  
 }
 
 #nav-control {
