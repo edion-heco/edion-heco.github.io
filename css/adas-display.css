@@ -14,13 +14,34 @@ body {
     justify-content: center;  
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }; 
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(-100%); }
+    /* 100% { transform: translateX(-100%); } */
+}
+
+.hidden{
+    display: none !important;  
+    animation: slide-out 0.5s backwards; 
+}
+
 #nav {
     position: absolute;
     top: 0; 
     left: 0; 
     height: 100vh;
     max-height: 100%; 
+    transform: translateX(-100%); 
     background-color: #0D111A;
+    animation: slide-in 0.5s forwards; 
 }
 
 #nav-control {
@@ -54,10 +75,6 @@ body {
     height: 100%; 
     width: 100%; 
     justify-content: space-between; 
-}
-
-.hidden{
-    display: none !important;  
 }
 
 .color-key {
