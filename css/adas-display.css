@@ -163,7 +163,14 @@ body {
     flex-direction: column; 
     flex-wrap: wrap; 
     width: 100%;
-    gap: 2.5rem; 
+}
+
+.modal-content > h2 {
+    align-self: center; 
+}
+
+.ds2c-modal > h2 {
+    align-self: center; 
 }
 
 .content-layout {
@@ -172,6 +179,20 @@ body {
     flex-wrap: wrap; 
     width: 100%;
     align-items: center;  
+    padding: 2.5rem 0rem; 
+}
+
+.content-layout.column {
+    flex-direction: column; 
+}
+
+.three-item {
+    width: 33.3%;
+}
+
+.three-item > img {
+    max-width: 100%; 
+    max-height: 218px; 
 }
 
 .section {
@@ -185,6 +206,7 @@ body {
 
 .paragraph {
     margin: 1.5rem 0rem; 
+    padding: 0rem 3rem; 
 }
 
 .oem-hidden {
