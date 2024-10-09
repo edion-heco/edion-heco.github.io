@@ -8,10 +8,9 @@ navToggle.addEventListener("click", function() {
 });
 
 //OEM List JSON Parsing
-var oemList = document.getElementById("oem-list"); 
-fetch('../components.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+// var oemList = document.getElementById("oem-list"); 
+// import data from '../components.json' assert { type: 'json' }; 
+// console.log(data); 
 
 //SVG Script
 var componentButtons = document.getElementsByClassName("componentBtn"); 
