@@ -2,7 +2,7 @@
     --camera-color: #00C00C; 
     --radar-color: #0089CF; 
     --ultrasound-color: #FDB913; 
-    --internal-color: #EBEEF5; 
+    --internal-color: #BCC1CC; 
 }
 
 html { height: 100vh; }
@@ -127,6 +127,10 @@ body {
 
 .internal {
     --ds2f-default-color: var(--internal-color);
+    --ds2f-hover-color: #A1A7B2;
+    --ds2f-active-color: #888E9A;
+    --ds2f-focus-border-color: #DDE2EB;
+    --ds2f-focus-color: #A1A7B2;
 }
 
 .svg-shape {
