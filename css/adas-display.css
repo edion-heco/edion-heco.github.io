@@ -135,25 +135,20 @@ body {
 
 .svg-shape {
     border-radius: 2rem;  
+    fill-opacity: 0.75;
+    stroke-width: 1px;
 }
 
 #camera {
-    fill-opacity: 0.75;
     stroke:var(--camera-color); 
-    stroke-width: 3px;
-    outline:var(--camera-color); 
 }
 
 #radar {
-    fill-opacity: 0.75;
     stroke:var(--radar-color); 
-    stroke-width: 3px;
 }
 
 #ultrasound{
-    fill-opacity: 0.75;
     stroke:var(--ultrasound-color); 
-    stroke-width: 3px;
 }
 
 #camera:hover, #radar:hover, #ultrasound:hover {
