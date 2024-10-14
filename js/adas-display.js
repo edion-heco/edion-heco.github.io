@@ -48,10 +48,6 @@ getData();
 
 // .then(response => console.log(JSON.stringify(response)))
 
-const json = JSON.parse(data); 
-
-console.log(json); 
-
 function toggleOem(oem) { 
     // for (let i = 0; i < svgShapes.length; i++) {
     //     if (svgShapes[i].classList.contains(oem)) {
