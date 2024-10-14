@@ -7,7 +7,7 @@ navToggle.addEventListener("click", function() {
     nav.setAttribute('class', isOpen ? "nav-hidden" : "nav-open");
 });
 
-//OEM List JSON Parsing
+
 // var oemList = document.getElementById("oem-list"); 
 // import data from '../components.json' assert { type: 'json' }; 
 // console.log(data); 
@@ -29,8 +29,24 @@ var gmBtn = document.getElementById("gmBtn");
 const oems = ["bmw", "chrysler", "ford", "gm", "honda", "hyundai", "jaguar", "mazda", "mercedes", "mitsubishi", "nissan", "subaru", "toyota", "vw", ];
 const oemBtns = document.getElementsByClassName("oem-button");
 
-const data = "./components.json"; 
-const oemList = document.getElementById("oem-list"); 
+//OEM List JSON Parsing
+const oemList = document.getElementById("oem-list");
+
+async function getData() {
+    const response = await fetch('https://edion-heco.github.io/components.json', {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+        },
+    })
+
+    const data = await response.json(); 
+    console.log(data); 
+}
+
+getData(); 
+
+// .then(response => console.log(JSON.stringify(response)))
 
 const json = JSON.parse(data); 
 
