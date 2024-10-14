@@ -29,15 +29,29 @@ var gmBtn = document.getElementById("gmBtn");
 const oems = ["bmw", "chrysler", "ford", "gm", "honda", "hyundai", "jaguar", "mazda", "mercedes", "mitsubishi", "nissan", "subaru", "toyota", "vw", ];
 const oemBtns = document.getElementsByClassName("oem-button");
 
+const data = "./components.json"; 
+const oemList = document.getElementById("oem-list"); 
+
+import { components } from '../components.js'; 
+
+const json = JSON.parse(components); 
+
+console.log(json); 
 
 function toggleOem(oem) { 
-    for (let i = 0; i < svgShapes.length; i++) {
-        if (svgShapes[i].classList.contains(oem)) {
-            svgShapes[i].classList.remove("oem-hidden") 
-        } else {
-            svgShapes[i].classList.add("oem-hidden"); 
-        }
-    }
+    // for (let i = 0; i < svgShapes.length; i++) {
+    //     if (svgShapes[i].classList.contains(oem)) {
+    //         svgShapes[i].classList.remove("oem-hidden"); 
+    //         var output = "";
+    //         for (var i )
+    //         oemList.innerHTML = `
+    //         <h3 class="ds2u-font-heading-h3 white-text">Honda / Acura Systems</h3>
+    //         <div class="oem-list-item"><div class="radar circle"></div><p>Collision Mitigation Braking System</p></div>
+    //         `;
+    //     } else {
+    //         svgShapes[i].classList.add("oem-hidden"); 
+    //     }
+    // }
 }
 
 for (let i = 0; i < oemBtns.length; i++) {
