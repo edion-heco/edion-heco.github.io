@@ -32,9 +32,9 @@ const oemBtns = document.getElementsByClassName("oem-button");
 const data = "./components.json"; 
 const oemList = document.getElementById("oem-list"); 
 
-import { components } from '../components.js'; 
+import data from '../components.js' assert { type: 'json' }; 
 
-const json = JSON.parse(components); 
+const json = JSON.parse(data); 
 
 console.log(json); 
 
