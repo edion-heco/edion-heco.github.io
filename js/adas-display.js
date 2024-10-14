@@ -8,10 +8,6 @@ navToggle.addEventListener("click", function() {
 });
 
 
-// var oemList = document.getElementById("oem-list"); 
-// import data from '../components.json' assert { type: 'json' }; 
-// console.log(data); 
-
 //SVG Script
 var componentButtons = document.getElementsByClassName("componentBtn"); 
 var svgShapes = document.getElementsByClassName("svg-shape"); 
@@ -26,42 +22,61 @@ var mazdaBtn = document.getElementById("mazdaBtn");
 var fordBtn = document.getElementById("fordBtn"); 
 var gmBtn = document.getElementById("gmBtn"); 
 
-const oems = ["bmw", "chrysler", "ford", "gm", "honda", "hyundai", "jaguar", "mazda", "mercedes", "mitsubishi", "nissan", "subaru", "toyota", "vw", ];
+// const oems = ["bmw", "chrysler", "ford", "gm", "honda", "hyundai", "jaguar", "mazda", "mercedes", "mitsubishi", "nissan", "subaru", "toyota", "vw", ];
 const oemBtns = document.getElementsByClassName("oem-button");
+
 
 //OEM List JSON Parsing
 const oemList = document.getElementById("oem-list");
 
 async function getData() {
-    const response = await fetch('https://edion-heco.github.io/components.json', {
+    let response = await fetch('https://edion-heco.github.io/components.json', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
         },
     })
 
-    const data = await response.json(); 
-    console.log(data); 
+    let data = await response.json(); 
+    
+    return data; // returns json object
 }
 
-getData(); 
+// const result = getData().then(data => {
+//     data.stringify();
+// });
 
-// .then(response => console.log(JSON.stringify(response)))
+// console.log(result); 
+async function setOems() {
+    let data = await getData(); 
+    const oems = []; 
+    for (var i in data) {
+        oems.push(Object.keys(data)); 
+        console.log(Object.keys(data))
+    }
+    console.log(oems); 
+    return oems; 
+}
 
-function toggleOem(oem) { 
-    // for (let i = 0; i < svgShapes.length; i++) {
-    //     if (svgShapes[i].classList.contains(oem)) {
-    //         svgShapes[i].classList.remove("oem-hidden"); 
-    //         var output = "";
-    //         for (var i )
-    //         oemList.innerHTML = `
-    //         <h3 class="ds2u-font-heading-h3 white-text">Honda / Acura Systems</h3>
-    //         <div class="oem-list-item"><div class="radar circle"></div><p>Collision Mitigation Braking System</p></div>
-    //         `;
-    //     } else {
-    //         svgShapes[i].classList.add("oem-hidden"); 
-    //     }
-    // }
+const oems = setOems(); 
+console.log(oems); 
+
+async function toggleOem(oem) {
+    let data = await getData(); 
+    
+    for (let i = 0; i < svgShapes.length; i++) {
+        if (svgShapes[i].classList.contains(oem)) {
+            svgShapes[i].classList.remove("oem-hidden"); 
+            // var output = "";
+            // for (var i )
+            // oemList.innerHTML = `
+            // <h3 class="ds2u-font-heading-h3 white-text">Honda / Acura Systems</h3>
+            // <div class="oem-list-item"><div class="radar circle"></div><p>Collision Mitigation Braking System</p></div>
+            // `;
+        } else {
+            svgShapes[i].classList.add("oem-hidden"); 
+        }
+    }
 }
 
 for (let i = 0; i < oemBtns.length; i++) {
