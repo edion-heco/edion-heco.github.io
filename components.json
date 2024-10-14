@@ -1,5 +1,4 @@
 {
-    
             "bmw" : 
                 {
                     "name":"BMW / Mini",
@@ -111,27 +110,21 @@
             "ford" : 
                 {
                     "name":"Ford / Lincoln",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "gm" : 
                 {
                     "name":"General Motors",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "honda" : 
@@ -235,119 +228,91 @@
             "hyundai" : 
                 {
                     "name":"Hyundai, Genesis, Kia",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "jaguar" : 
                 {
-                    "name":"Jaguar / Land Rover",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "name":"Jaguar / Land Rover", 
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "mazda" : 
                 {
                     "name":"Mazda",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "mercedes" : 
                 {
                     "name":"Mercedes-Benz",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "mitsubishi" : 
                 {
                     "name":"Mitsubishi",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "nissan" : 
                 {
                     "name":"Nissan / Infiniti",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "subaru" : 
                 {
                     "name":"Subaru",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "toyota" : 
                 {
                     "name":"Toyota / Lexus",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
                 },
             "vw" : 
                 {
                     "name":"Volkswagen, Audi, Porsche",
-                    "cameras": [
-                        "Forward Collision Warning", "Road Departure Mitigation"
-                    ], 
-                    "radars": [
-                        "Adaptive Cruise Control", "Blind Spot Detection"
-                    ],
-                    "ultrasound": [
-                        "Front and Rear Ultrasound"
+                    "components": [
+                        {
+                            "componenttype": "camera",
+                            "brandedname": "Surround Vision System"
+                        }
                     ]
-                }
-         
+                } 
 }

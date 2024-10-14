@@ -8,7 +8,7 @@ navToggle.addEventListener("click", function() {
 });
 
 
-//SVG Script
+//OEM List JSON Parsing
 var componentButtons = document.getElementsByClassName("componentBtn"); 
 var svgShapes = document.getElementsByClassName("svg-shape"); 
 
@@ -22,14 +22,13 @@ var mazdaBtn = document.getElementById("mazdaBtn");
 var fordBtn = document.getElementById("fordBtn"); 
 var gmBtn = document.getElementById("gmBtn"); 
 
-// const oems = ["bmw", "chrysler", "ford", "gm", "honda", "hyundai", "jaguar", "mazda", "mercedes", "mitsubishi", "nissan", "subaru", "toyota", "vw", ];
 const oemBtns = document.getElementsByClassName("oem-button");
 
-
-//OEM List JSON Parsing
 const oemList = document.getElementById("oem-list");
+const oemListTitle = document.getElementById("oem-list-title");
+const oemListItems = document.getElementById("oem-list-items");
 
-async function getData() {
+async function getData() { // gets component data from json file
     let response = await fetch('https://edion-heco.github.io/components.json', {
         method: 'GET',
         headers: {
@@ -42,48 +41,64 @@ async function getData() {
     return data; // returns json object
 }
 
-// const result = getData().then(data => {
-//     data.stringify();
-// });
-
-// console.log(result); 
-async function setOems() {
+async function getOems() { // function to set list of OEM names, returns OEM title
     let data = await getData(); 
-    const oems = []; 
-    for (var i in data) {
-        oems.push(Object.keys(data)); 
-        console.log(Object.keys(data))
-    }
-    console.log(oems); 
+    const oems = Object.keys(data); 
     return oems; 
 }
 
-const oems = setOems(); 
-console.log(oems); 
-
-async function toggleOem(oem) {
+async function getComponents(oem) { // function to set list of OEM names, returns OEM title
     let data = await getData(); 
-    
+    const components = data[oem]; 
+    return components; 
+}
+
+async function toggleOem(oem) { // uses awaited data from json call to toggle visible OEM svgs
     for (let i = 0; i < svgShapes.length; i++) {
         if (svgShapes[i].classList.contains(oem)) {
             svgShapes[i].classList.remove("oem-hidden"); 
-            // var output = "";
-            // for (var i )
-            // oemList.innerHTML = `
-            // <h3 class="ds2u-font-heading-h3 white-text">Honda / Acura Systems</h3>
-            // <div class="oem-list-item"><div class="radar circle"></div><p>Collision Mitigation Braking System</p></div>
-            // `;
         } else {
             svgShapes[i].classList.add("oem-hidden"); 
         }
     }
 }
 
-for (let i = 0; i < oemBtns.length; i++) {
-    oemBtns[i].addEventListener("click", function() {
-        toggleOem(oems[i]); 
-    });
+// async function fillList(oem) {
+//     for (var i in )
+// }
+
+async function main() {
+    let oems = await getOems();
+    let data = await getData();
+    for (let i = 0; i < oemBtns.length; i++) {
+        oemBtns[i].addEventListener("click", function() {
+            oemListItems.innerHTML= ""; 
+
+            toggleOem(oems[i]);
+            oemListTitle.innerHTML = data[oems[i]]["name"];
+
+            for (let j = 0; j < data[oems[i]]["components"].length; j++) {
+                let newListItem = document.createElement('div');
+                newListItem.classList.add("oem-list-item");
+                
+                let newCircle = document.createElement('div'); 
+                newCircle.classList.add("circle"); 
+                newCircle.classList.add(data[oems[i]]["components"][j].componenttype)
+
+                let newParagraph = document.createElement('p'); 
+                newParagraph.innerHTML += '<p>' + data[oems[i]]["components"][j].brandedname + '</p>';
+
+                newListItem.append(newCircle); 
+                newListItem.append(newParagraph); 
+
+                oemListItems.append(newListItem); 
+                // oemListItems.innerHTML = newListItem; 
+            }
+        });
+    }
 }
+
+main(); 
 
 // Modals script
 var modalContainers = document.getElementsByClassName("ds2c-modal-container");
