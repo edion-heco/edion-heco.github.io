@@ -164,7 +164,7 @@ body {
     width: 100%;
 }
 
-.modal-content > h2 {
+.modal-content > h1, h2, h3, h4 {
     align-self: center; 
 }
 
