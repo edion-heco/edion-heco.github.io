@@ -1002,19 +1002,19 @@
                     "brandedname": "Travel Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Cruise Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Active Blind Spot Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Traffic Alert"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Front Assist"
                 },
                 {
@@ -1026,15 +1026,15 @@
                     "brandedname": "Lane Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Park Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Park Pilot"
                 },
                 {
@@ -1050,15 +1050,15 @@
                     "brandedname": "Forward Collision Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Emergency Brake Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Electronic Stability Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Collision Mitigation - Front and Rear"
                 },
                 {
@@ -1066,7 +1066,7 @@
                     "brandedname": "Turn Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Hold Assist"
                 },
                 {
@@ -1074,11 +1074,11 @@
                     "brandedname": "Audi Active Lane Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Audi Pre-Sense 360"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Exit Warning"
                 },
                 {
@@ -1086,19 +1086,19 @@
                     "brandedname": "Collision Avoidance Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Curb Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Multi-Collision Brake Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "High-Beam Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Crossing Assist"
                 },
                 {
@@ -1106,7 +1106,7 @@
                     "brandedname": "Night Vision Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Cross Traffic Assist"
                 }
             ]
