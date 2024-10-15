@@ -363,6 +363,10 @@
                 },
                 {
                     "componenttype": "camera",
+                    "brandedname": "Highway Driving Assist"
+                },
+                {
+                    "componenttype": "camera",
                     "brandedname": "Highway Driving Assist 2"
                 },
                 {
@@ -411,26 +415,6 @@
                 },
                 {
                     "componenttype": "camera",
-                    "brandedname": "Blind-Spot Collision Avoidance Assist & Warning"
-                },
-                {
-                    "componenttype": "camera",
-                    "brandedname": "Blind-Spot View Monitor"
-                },
-                {
-                    "componenttype": "camera",
-                    "brandedname": "Smart Cruise Control w/ Stop & Go"
-                },
-                {
-                    "componenttype": "camera",
-                    "brandedname": "Highway Driving Assist"
-                },
-                {
-                    "componenttype": "camera",
-                    "brandedname": "Surround View Monitor"
-                },
-                {
-                    "componenttype": "camera",
                     "brandedname": "Remote Start Parking Assist"
                 },
                 {
@@ -440,14 +424,6 @@
                 {
                     "componenttype": "camera",
                     "brandedname": "Kia Drive Wise"
-                },
-                {
-                    "componenttype": "camera",
-                    "brandedname": "High Beam Assist"
-                },
-                {
-                    "componenttype": "camera",
-                    "brandedname": "Driver Attention Warning"
                 },
                 {
                     "componenttype": "camera",
