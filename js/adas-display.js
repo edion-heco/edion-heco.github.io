@@ -10,20 +10,8 @@ navToggle.addEventListener("click", function() {
 
 //OEM List JSON Parsing
 var componentButtons = document.getElementsByClassName("componentBtn"); 
-var svgShapes = document.getElementsByClassName("svg-shape"); 
-
-var toyotaBtn = document.getElementById("toyotaBtn"); 
-var hondaBtn = document.getElementById("hondaBtn"); 
-var nissanBtn = document.getElementById("nissanBtn"); 
-var subaruBtn = document.getElementById("subaruBtn"); 
-var hyundaiBtn = document.getElementById("hyundaiBtn"); 
-var chryslerBtn = document.getElementById("chryslerBtn"); 
-var mazdaBtn = document.getElementById("mazdaBtn"); 
-var fordBtn = document.getElementById("fordBtn"); 
-var gmBtn = document.getElementById("gmBtn"); 
-
+var svgShapes = document.getElementsByClassName("svg-shape");  
 const oemBtns = document.getElementsByClassName("oem-button");
-
 const oemList = document.getElementById("oem-list");
 const oemListTitle = document.getElementById("oem-list-title");
 const oemListItems = document.getElementById("oem-list-items");
@@ -63,10 +51,6 @@ async function toggleOem(oem) { // uses awaited data from json call to toggle vi
     }
 }
 
-// async function fillList(oem) {
-//     for (var i in )
-// }
-
 async function main() {
     let oems = await getOems();
     let data = await getData();
@@ -92,7 +76,6 @@ async function main() {
                 newListItem.append(newParagraph); 
 
                 oemListItems.append(newListItem); 
-                // oemListItems.innerHTML = newListItem; 
             }
         });
     }
@@ -113,11 +96,3 @@ for (let i = 0; i < componentButtons.length; i++) {
 for (let i = 0; i < svgShapes.length; i++) {
     modalContainer.initModal(document.getElementById(svgShapes[i].getAttribute("data-linked-modal")), svgShapes[i]);
 }
-
-
-
-
-
-
-
-

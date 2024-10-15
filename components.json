@@ -1,318 +1,1114 @@
 {
-            "bmw" : 
+    "bmw" : 
+        {
+            "name":"BMW / Mini",
+            "components": [
                 {
-                    "name":"BMW / Mini",
-                    "components": [
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Collision Mitigation Braking System"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Forward Collision Warning"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Road Departure Mitigation"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Lane Keeping Assist System"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Adaptive Cruise Control"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Low-Speed Follow"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Traffic Jam Assist"
-                        },
-                        {
-                            "componenttype": "internal",
-                            "brandedname": "Driver Attention Monitor"
-                        },
-                        {
-                            "componenttype": "internal",
-                            "brandedname": "Vehicle Stability Assist"
-                        },
-                        {
-                            "componenttype": "ultrasound",
-                            "brandedname": "Automatic Parking Assist"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Blind Spot Assistance"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Lane Departure Warning"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Lanewatch"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Blind Spot Information System"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Cross Traffic Monitor"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Auto High Beam Headlights"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Rear Automatic Braking"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Rear Cross Traffic Braking"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Blind Zone Steering Assist and Alert"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "The Honda Sensing Suite"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Rear Pedestrian Alert"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Automatic Emergency Braking"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Active Blind Spot Detection"
                 },
-            "chrysler" : 
                 {
-                    "name":"Chrysler, Dodge, Jeep, Ram",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Mitigation"
                 },
-            "ford" : 
                 {
-                    "name":"Ford / Lincoln",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Lane Keeping Assistant"
                 },
-            "gm" : 
                 {
-                    "name":"General Motors",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Drive Recorder"
                 },
-            "honda" : 
                 {
-                    "name":"Honda / Acura",
-                    "components": [
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Collision Mitigation Braking System"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Forward Collision Warning"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Road Departure Mitigation"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Lane Keeping Assist System"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Adaptive Cruise Control"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Low-Speed Follow"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Traffic Jam Assist"
-                        },
-                        {
-                            "componenttype": "internal",
-                            "brandedname": "Driver Attention Monitor"
-                        },
-                        {
-                            "componenttype": "internal",
-                            "brandedname": "Vehicle Stability Assist"
-                        },
-                        {
-                            "componenttype": "ultrasound",
-                            "brandedname": "Automatic Parking Assist"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Blind Spot Assistance"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Lane Departure Warning"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Lanewatch"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Blind Spot Information System"
-                        },
-                        {
-                            "componenttype": "radar",
-                            "brandedname": "Cross Traffic Monitor"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Auto High Beam Headlights"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Rear Automatic Braking"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Rear Cross Traffic Braking"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Blind Zone Steering Assist and Alert"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "The Honda Sensing Suite"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Rear Pedestrian Alert"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Automatic Emergency Braking"
-                        },
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "High Beam Assistant"
                 },
-            "hyundai" : 
                 {
-                    "name":"Hyundai, Genesis, Kia",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Emergency Stop Assistant"
                 },
-            "jaguar" : 
                 {
-                    "name":"Jaguar / Land Rover", 
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Backup Assistant"
                 },
-            "mazda" : 
                 {
-                    "name":"Mazda",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Maneuver Assistant"
                 },
-            "mercedes" : 
                 {
-                    "name":"Mercedes-Benz",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Distance Control"
                 },
-            "mitsubishi" : 
                 {
-                    "name":"Mitsubishi",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Steer Assistant"
                 },
-            "nissan" : 
                 {
-                    "name":"Nissan / Infiniti",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "BMW Highway Assistant"
+                }
+            ]
+        },
+    "chrysler" : 
+        {
+            "name":"Chrysler, Dodge, Jeep, Ram",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Cruise Control with Stop and Go"
                 },
-            "subaru" : 
                 {
-                    "name":"Subaru",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "LaneSense Lane Departure Warning"
                 },
-            "toyota" : 
                 {
-                    "name":"Toyota / Lexus",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
+                    "componenttype": "camera",
+                    "brandedname": "Full-Speed Forward Collision Warning with Active Braking"
                 },
-            "vw" : 
                 {
-                    "name":"Volkswagen, Audi, Porsche",
-                    "components": [
-                        {
-                            "componenttype": "camera",
-                            "brandedname": "Surround Vision System"
-                        }
-                    ]
-                } 
+                    "componenttype": "camera",
+                    "brandedname": "Pedestrian Automatic Emergency Braking System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot Monitoring System with Rear Crossing Path Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "ParkSense Front and Rear Park Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross Path Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "360 Surround View Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Parallel and Perpendicular Park Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Driving Assist Jeep"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "ParkView Rear Backup Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Intelligent Speed Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Driver Attention Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Keeping Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Highway Assist System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Blind Spot Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Traffic Sign Recognition"
+                }
+            ]
+        },
+    "ford" : 
+        {
+            "name":"Ford / Lincoln",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane-Keeping System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Evasive Steering Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear View Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Hill Descent Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot information System with Cross Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Pre-Collision Assist with Automatic Emergency Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Auto High-Beam Headlamps"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Pro Trailer Backup Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Backup Sensors"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Copilot 360"
+                }
+            ]
+        },
+    "gm" : 
+        {
+            "name":"General Motors",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Chevrolet Safety Assist +"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Alert & Automatic Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Front Pedestrian Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Keep Assist with Lane Departure"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "HD Rear Vision Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Automatic Emergency Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Park Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Change Alert with Side Blind Zone Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Following Distance Indicator"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Cadillac Super Cruise"
+                }
+            ]
+        },
+    "honda" : 
+        {
+            "name":"Honda / Acura",
+            "components": [
+                {
+                    "componenttype": "radar",
+                    "brandedname": "Collision Mitigation Braking System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Road Departure Mitigation"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Keeping Assist System"
+                },
+                {
+                    "componenttype": "radar",
+                    "brandedname": "Adaptive Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Low-Speed Follow"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Traffic Jam Assist"
+                },
+                {
+                    "componenttype": "internal",
+                    "brandedname": "Driver Attention Monitor"
+                },
+                {
+                    "componenttype": "internal",
+                    "brandedname": "Vehicle Stability Assist"
+                },
+                {
+                    "componenttype": "ultrasound",
+                    "brandedname": "Automatic Parking Assist"
+                },
+                {
+                    "componenttype": "radar",
+                    "brandedname": "Blind Spot Assistance"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lanewatch"
+                },
+                {
+                    "componenttype": "radar",
+                    "brandedname": "Blind Spot Information System"
+                },
+                {
+                    "componenttype": "radar",
+                    "brandedname": "Cross Traffic Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Auto High Beam Headlights"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Automatic Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross Traffic Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Zone Steering Assist and Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "The Honda Sensing Suite"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Pedestrian Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Automatic Emergency Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Surround Vision System"
+                }
+            ]
+        },
+    "hyundai" : 
+        {
+            "name":"Hyundai, Genesis, Kia",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Avoidance Assist with Pedestrian Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind-Spot Collision Avoidance Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind-Spot View Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Following Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Keeping Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Driver Attention Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "High Beam Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Smart Cruise Control with Stop & Go"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Highway Driving Assist 2"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Downhill Braking Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross-Traffic Collision Avoidance Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Advanced Rear Occupant Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Safe Exit Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Safe Exit Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Reverse Parking Collision Avoidance Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Surround View Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Premium Remote Start Parking Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Parking Distance Warning (Front and Reverse)"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Hyundai Smart Sense"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Auto Emergency Braking Technology"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind-Spot Collision Avoidance Assist & Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind-Spot View Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Smart Cruise Control w/ Stop & Go"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Highway Driving Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Surround View Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Remote Start Parking Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Avoidance Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Kia Drive Wise"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "High Beam Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Driver Attention Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Avoidance Assist (Cyclists)"
+                },
+            ]
+        },
+    "jaguar" : 
+        {
+            "name":"Jaguar / Land Rover", 
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Emergency Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Keep Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Traffic Sign Recognition with Adaptive Speed Limiter"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Driver Condition Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Collision Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "3D Surround Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Front and Rear Parking Aid"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Traffic Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Clear Exit Monitor"
+                }
+            ]
+        },
+    "mazda" : 
+        {
+            "name":"Mazda",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Front-Lighting System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "High Beam Control System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Glare-Free Beams"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Wide Range Low Beams"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Highway Mode"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Driver Attention Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane-Keep Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Trace"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure Avoidance"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind-Spot Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "I-Activ AWD"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Hill Launch Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Mazda Rear Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Vehicle Monitoring"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Emergency Signal System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Obstruction Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Brake Assist and Electronic Brake-Force Distribution"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "The Dynamic Stability Control & Traction Control System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Acceleration Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Smart City Brake Support"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Smart Brake Support"
+                }
+            ]
+        },
+    "mercedes" : 
+        {
+            "name":"Mercedes-Benz",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Brake System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross-Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot Assist with Exit Warning Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "PreSafe"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Attention Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Crosswind Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Parktronic with Active Parking Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rearview Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Braking Technology"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Brake Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "4-Wheel Electronic Traction System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Advanced Tire Pressure Monitoring System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Electric Parking Brake"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Distance Assist Distronic"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Steering Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Evasive Steering Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Congestion Emergency Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Speed Limit Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Lane Change Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Highbeam Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Blind Spot Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Lane Keeping Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Surround View System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Speed Limit Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Parking Damage Detector"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Intelligent Drive"
+                }
+            ]
+        },
+    "mitsubishi" : 
+        {
+            "name":"Mitsubishi",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Mitigation with Pedestrian Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure Warning"
+                },
+                {
+                    "componenttype": "radar",
+                    "brandedname": "Mitsubishi Adaptive Cruise Control"
+                },
+                {
+                    "componenttype": "radar",
+                    "brandedname": "Mitsubishi Blind Spot Warning / Lane Change Assist"
+                },
+                {
+                    "componenttype": "Ultrasonic",
+                    "brandedname": "Rear Automatic Emergency Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Multi-View Camera System"
+                },
+                {
+                    "componenttype": "internal",
+                    "brandedname": "Tire Pressure Monitoring System"
+                }
+            ]
+        },
+    "nissan" : 
+        {
+            "name":"Nissan / Infiniti",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "ProPILOT Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Intelligent View Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Intelligent Forward Collision Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Automatic Emergency Braking with Pedestrian Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Automatic Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "High Beam Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Front Pedestrian Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Collision System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Brake Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Traffic Sign Information"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Hill Hold Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "360 Surround View Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Cabin Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Lane Keep Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Driver Attention Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Parking Sensors"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Around View Monitor with Moving Object Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot Intervention"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure Intervention"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Predictive Forward Collision Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Direct Adaptive Steering"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Intelligent Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Predictive Forward Emergency Braking and Backup Collision Intervention"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross Traffic Alert"
+                }
+            ]
+        },
+    "subaru" : 
+        {
+            "name":"Subaru",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Subaru Eyesight"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Pre-Collision Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind-Spot Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Cross Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Smart Rear-View Mirror"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Sway Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Automatic Emergency Steering"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Pre-Collision Throttle Management"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Reverse Automatic Braking"
+                }
+            ]
+        },
+    "toyota" : 
+        {
+            "name":"Toyota / Lexus",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Pre-Collision System with Pedestrian Detection"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Dynamic Radar Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Departure Alert with Steering Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Tracing Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Road Sign Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Automatic High Beams"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Proactive Driving Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Toyota Safety Sense"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Electric Parking Brake"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Full-Speed Range Dynamic Radar Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Front and Rear Parking Assist with Automatic Braking"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Star Safety System"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot Monitor with Rear Cross-Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Integrated Backup Camera"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Safe Exit Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lexus Parking Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Front Cross Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lexus Safety System +"
+                }
+            ]
+        },
+    "vw" : 
+        {
+            "name":"Volkswagen, Audi, Porsche",
+            "components": [
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Travel Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Adaptive Cruise Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Active Blind Spot Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Rear Traffic Alert"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Front Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Emergency Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Lane Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Blind Spot Monitor"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Park Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Park Pilot"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Area View"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Light Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Forward Collision Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Emergency Brake Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Electronic Stability Control"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Collision Mitigation - Front and Rear"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Turn Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Hold Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Audi Active Lane Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Audi Pre-Sense 360"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Exit Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Collision Avoidance Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Curb Warning"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Multi-Collision Brake Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "High-Beam Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Crossing Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Night Vision Assist"
+                },
+                {
+                    "componenttype": "camera",
+                    "brandedname": "Cross Traffic Assist"
+                }
+            ]
+        } 
 }
