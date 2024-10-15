@@ -734,7 +734,7 @@
                     "brandedname": "Mitsubishi Blind Spot Warning / Lane Change Assist"
                 },
                 {
-                    "componenttype": "Ultrasonic",
+                    "componenttype": "ultrasound",
                     "brandedname": "Rear Automatic Emergency Braking"
                 },
                 {

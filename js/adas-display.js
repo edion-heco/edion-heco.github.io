@@ -70,7 +70,7 @@ async function main() {
                 newCircle.classList.add(data[oems[i]]["components"][j].componenttype)
 
                 let newParagraph = document.createElement('p'); 
-                newParagraph.innerHTML += '<p>' + data[oems[i]]["components"][j].brandedname + '</p>';
+                newParagraph.innerHTML += data[oems[i]]["components"][j].brandedname;
 
                 newListItem.append(newCircle); 
                 newListItem.append(newParagraph); 
