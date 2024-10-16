@@ -56,6 +56,7 @@ async function main() {
     let data = await getData();
     for (let i = 0; i < oemBtns.length; i++) {
         oemBtns[i].addEventListener("click", function() {
+            oemList.classList.remove("hidden"); 
             oemListItems.innerHTML= ""; 
 
             toggleOem(oems[i]);

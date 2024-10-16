@@ -6029,3 +6029,7 @@
 .white-text {
   color: var(--ds2v-color-white); 
 }
+
+.gray-text {
+  color: var(--ds2v-color-neutral-midlighter); 
+}
