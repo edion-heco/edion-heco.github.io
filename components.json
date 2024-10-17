@@ -334,7 +334,7 @@
                     "brandedname": "Forward Collision Avoidance Assist with Pedestrian Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind-Spot Collision Avoidance Assist"
                 },
                 {
@@ -358,7 +358,7 @@
                     "brandedname": "High Beam Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Smart Cruise Control with Stop & Go"
                 },
                 {
