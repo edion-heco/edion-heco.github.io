@@ -4,15 +4,15 @@
             "name":"BMW / Mini",
             "components": [
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Active Blind Spot Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Forward Collision Mitigation"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Lane Keeping Assistant"
                 },
                 {
@@ -20,7 +20,7 @@
                     "brandedname": "Drive Recorder"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "High Beam Assistant"
                 },
                 {
@@ -36,11 +36,11 @@
                     "brandedname": "Maneuver Assistant"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Distance Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Steer Assistant"
                 },
                 {
@@ -140,15 +140,15 @@
                     "brandedname": "Rear View Camera"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Hill Descent Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Cruise Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot information System with Cross Traffic Alert"
                 },
                 {
@@ -156,7 +156,7 @@
                     "brandedname": "Pre-Collision Assist with Automatic Emergency Braking"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Auto High-Beam Headlamps"
                 },
                 {
@@ -164,7 +164,7 @@
                     "brandedname": "Pro Trailer Backup Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Rear Backup Sensors"
                 },
                 {
@@ -338,7 +338,7 @@
                     "brandedname": "Blind-Spot Collision Avoidance Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "rear",
                     "brandedname": "Blind-Spot View Monitor"
                 },
                 {
@@ -378,19 +378,23 @@
                     "brandedname": "Rear Cross-Traffic Collision Avoidance Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
+                    "brandedname": "Rear Occupant Alert"
+                },
+                {
+                    "componenttype": "radar",
                     "brandedname": "Advanced Rear Occupant Alert"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Safe Exit Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Safe Exit Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Reverse Parking Collision Avoidance Assist"
                 },
                 {
@@ -398,7 +402,7 @@
                     "brandedname": "Surround View Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Premium Remote Start Parking Assist"
                 },
                 {
@@ -436,7 +440,7 @@
             "name":"Jaguar / Land Rover", 
             "components": [
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Cruise Control"
                 },
                 {
@@ -448,7 +452,7 @@
                     "brandedname": "Lane Keep Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot Assist"
                 },
                 {
@@ -456,7 +460,7 @@
                     "brandedname": "Traffic Sign Recognition with Adaptive Speed Limiter"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Driver Condition Monitor"
                 },
                 {
@@ -468,15 +472,15 @@
                     "brandedname": "3D Surround Camera"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Front and Rear Parking Aid"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Traffic Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Clear Exit Monitor"
                 }
             ]
