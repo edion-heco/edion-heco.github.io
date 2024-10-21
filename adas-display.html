@@ -19,7 +19,7 @@
             <div class="nav-content">
                 <h3 class="ds2u-font-heading-h3 white-text" style="margin: 0px;">Explore Hunter ADAS</h3>
                 <a href="https://www.hunter.com/alignment-machines/ultimate-adas/"><button class="ds2c-button ds2m-secondary-light">Ultimate ADAS<sup>&reg;</sup></button></a>
-                <button class="ds2c-button ds2m-secondary-light">ADAS Lookup Guide</button>
+                <a href="https://www.hunter.com/HunterNet/adas-coverage-guide/"><button class="ds2c-button ds2m-secondary-light">ADAS Coverage Guide</button></a>
                 <button class="ds2c-button">Let's Talk</button>
             </div>
         </div>
@@ -177,7 +177,8 @@
                         <div class="paragraph">
                             <h3 class="ds2u-font-heading-h3" style="margin: 0px;">Internal ADAS Systems</h3>
                             <p style="margin: 0;">
-                                Steering angle sensor
+                                While sensors help to detect external factors in the driving environment, internal adas systems assist in acting upon this feedback. Steering angle sensors, 
+                                tire pressure monitoring systems, and electronic braking systems all contribute towards many important ADAS functions.
                             </p>
                         </div>
                     </div>
@@ -191,7 +192,7 @@
                 </div>
                 <div class="ds2s-column">
                     <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/badge_adas_tcs-traction-control-system.png/Zz1kMjE5OTM0NDIwYjMxMWVlYWZhN2RhYjEyOTFmNTIyZA==" /></div>
-                    <h5 class="ds2s-column-subtitle">Title</h5>
+                    <h5 class="ds2s-column-subtitle">TCS</h5>
                     <p class="ds2s-column-text">Traction Control</p>
                 </div>
                 <div class="ds2s-column">
@@ -228,6 +229,10 @@
                     <stop offset="0%" stop-color="#0089CF35" />
                     <stop offset="100%" stop-color="#0089CF" />
                 </linearGradient>
+                <linearGradient id="radar-right-left" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0089CF" />
+                    <stop offset="100%" stop-color="#0089CF35" />
+                </linearGradient>
                 <linearGradient id="ultrasound-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stop-color="#FDB91335" />
                     <stop offset="100%" stop-color="#FDB913" />
@@ -236,22 +241,26 @@
                     <stop offset="0%" stop-color="#00C00C" />
                     <stop offset="100%" stop-color="#00C00C25" />
                 </linearGradient>
+                <linearGradient id="ultrasound-left-right" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#FDB91345" />
+                    <stop offset="100%" stop-color="#FDB913" />
+                </linearGradient>
                 <linearGradient id="ultrasound-right-left" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stop-color="#FDB913" />
-                    <stop offset="100%" stop-color="#FDB91335" />
+                    <stop offset="100%" stop-color="#FDB91345" />
                 </linearGradient>
             </defs>
 
-            <path id="camera" name="Side Cameras" data-linked-modal="surround-view-modal" fill="url(#camera-left-right)" class="honda mitsubishi" d="M 555 235 L 480 160 Q 602.5 85, 725 160 L 650 235 Z M 555 365 L 480 440 Q 602.5 515, 725 440 L 650 365 Z"/>
-            <path id="radar" name="Blind Spot Radar" data-linked-modal="blind-spot-modal" fill="url(#radar-left-right)" class="bmw honda mitsubishi" d="M 480 235 C 385 150, 530 45, 525 235 Z M 480 365 C 385 450, 530 555, 525 365 Z"/>
-            <path id="radar" name="Front-Facing Radar (Long)" data-linked-modal="front-radar-modal-long" fill="url(#radar-left-right)" class="honda mitsubishi" d="M 770 300 L 1060 235 Q 1085 301, 1060 367 Z"/>
-            <path id="radar" name="Front-Facing Radar (Short)" data-linked-modal="front-radar-modal-short" fill="url(#radar-left-right)" class="bmw honda mitsubishi" d="M 770 300 L 975 192 Q 1025 301, 975 410 Z"/>
-            <path id="camera"  name="Front-Facing Camera" data-linked-modal="front-camera-modal" fill="url(#camera-left-right)" class="bmw honda toyota mitsubishi" d="M 628 300 L 900 170 Q 950 300, 900 430 Z"/>
-            <path id="camera" name="Back-Facing Camera" data-linked-modal="back-camera-modal" fill="url(#camera-right-left)" class="bmw honda toyota mitsubishi" d="M 430 300 L 300 190 Q 220 300, 300 410 Z"/>
-            <path id="radar" name="Cross-Traffic Alert Radar" data-linked-modal="front-traffic-radar-modal" fill="url(#radar-left-right)" class="bmw honda toyota nissan" d="M 740 235 C 740 235, 920 100, 845 255 C 840 250, 960 300, 850 360 C 845 365, 920 500, 740 370 C 785 370, 785 230, 740 235 Z"/>
-            <path id="ultrasound" name="Front Ultrasound" data-linked-modal="front-ultrasound-modal" fill="url(#ultrasound-left-right)" class="honda toyota nissan mitsubishi" d="M 740 235 C 855 110, 855 490, 740 365 C 785 370, 785 230, 740 235 Z"/>
+            <path id="camera" name="Side Cameras" data-linked-modal="surround-view-modal" fill="url(#camera-left-right)" class="ford honda hyundai mitsubishi" d="M 555 235 L 480 160 Q 602.5 85, 725 160 L 650 235 Z M 555 365 L 480 440 Q 602.5 515, 725 440 L 650 365 Z"/>
+            <path id="radar" name="Blind Spot Radar" data-linked-modal="blind-spot-modal" fill="url(#radar-left-right)" class="bmw ford honda hyundai mitsubishi" d="M 480 235 C 385 150, 530 45, 525 235 Z M 480 365 C 385 450, 530 555, 525 365 Z"/>
+            <path id="radar" name="Front-Facing Radar (Long)" data-linked-modal="front-radar-modal-long" fill="url(#radar-right-left)" class="ford honda hyundai mitsubishi" d="M 770 300 L 1060 235 Q 1085 301, 1060 367 Z"/>
+            <path id="radar" name="Front-Facing Radar (Short)" data-linked-modal="front-radar-modal-short" fill="url(#radar-right-left)" class="bmw honda mitsubishi" d="M 770 300 L 975 192 Q 1025 301, 975 410 Z"/>
+            <path id="camera"  name="Front-Facing Camera" data-linked-modal="front-camera-modal" fill="url(#camera-left-right)" class="bmw ford honda hyundai toyota mitsubishi" d="M 628 300 L 900 170 Q 950 300, 900 430 Z"/>
+            <path id="camera" name="Back-Facing Camera" data-linked-modal="back-camera-modal" fill="url(#camera-right-left)" class="bmw ford honda hyundai toyota mitsubishi" d="M 430 300 L 300 190 Q 220 300, 300 410 Z"/>
+            <path id="radar" name="Cross-Traffic Alert Radar" data-linked-modal="front-traffic-radar-modal" fill="url(#radar-right-left)" class="bmw honda hyundai toyota nissan" d="M 740 235 C 740 235, 920 100, 845 255 C 840 250, 960 300, 850 360 C 845 365, 920 500, 740 370 C 785 370, 785 230, 740 235 Z"/>
+            <path id="ultrasound" name="Front Ultrasound" data-linked-modal="front-ultrasound-modal" fill="url(#ultrasound-right-left)" class="honda toyota nissan mitsubishi" d="M 740 235 C 855 110, 855 490, 740 365 C 785 370, 785 230, 740 235 Z"/>
             <path id="radar" name="Collision Warning Radar" data-linked-modal="back-radar-modal" fill="url(#radar-left-right)" class="honda toyota nissan mitsubishi" d="M 475 235 C 300 110, 300 300, 375 300 C 300 300, 300 485, 475 365 C 413 370, 413 230, 475 235 Z"/>
-            <path id="ultrasound" name="Back Ultrasound" data-linked-modal="back-ultrasound-modal" fill="url(#ultrasound-left-right)" class="honda toyota nissan mitsubishi" d="M 475 235 C 360 110, 360 490, 475 365 C 413 370, 413 230, 475 235 Z"/>
+            <path id="ultrasound" name="Back Ultrasound" data-linked-modal="back-ultrasound-modal" fill="url(#ultrasound-left-right)" class="ford honda hyundai toyota nissan mitsubishi" d="M 475 235 C 360 110, 360 490, 475 365 C 413 370, 413 230, 475 235 Z"/>
         </svg>
 
         <div id="surround-view-modal" class="ds2c-modal">
@@ -320,7 +329,7 @@
                         <h5 class="ds2s-column-subtitle">Wheel Alignment</h5>
                     </div>
                     <div class="ds2s-column">
-                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-tools.svg/Zz1hNzFlZTg4YzZhN2ExMWVkYTE3MWEyZDZjMzExOWQwYg==" /></div>
+                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-suspension-bad.svg/Zz1hNGY1ZDY2MDZhN2ExMWVkYTBmN2JlMjUxOTIzMmY1OQ==" /></div>
                         <h5 class="ds2s-column-subtitle">Suspension Repair</h5>
                     </div>
                     <div class="ds2s-column">
@@ -336,15 +345,15 @@
                         <h5 class="ds2s-column-subtitle">Front Airbag Deployment</h5>
                     </div>
                     <div class="ds2s-column">
-                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-tools.svg/Zz1hNzFlZTg4YzZhN2ExMWVkYTE3MWEyZDZjMzExOWQwYg==" /></div>
+                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-arrow-up.svg/Zz0xOWI3MjExMjZhN2ExMWVkODMzYjdhZWYzODFmNWUwNw==" /></div>
                         <h5 class="ds2s-column-subtitle">Lift Kits</h5>
                     </div>
                     <div class="ds2s-column">
-                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-tools.svg/Zz1hNzFlZTg4YzZhN2ExMWVkYTE3MWEyZDZjMzExOWQwYg==" /></div>
+                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-arrow-down.svg/Zz0xOTNjMmIyNDZhN2ExMWVkYjhmM2RlNWYyOTA3MWMyYw==" /></div>
                         <h5 class="ds2s-column-subtitle">Lower Kits</h5>
                     </div>
                     <div class="ds2s-column">
-                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-tools.svg/Zz1hNzFlZTg4YzZhN2ExMWVkYTE3MWEyZDZjMzExOWQwYg==" /></div>
+                        <div class="ds2s-column-image"><img src="https://globalassets.hunter.com/images/assets/icon-measurement-level.svg/Zz0wZGEwOGE5NDRjYzQxMWVlYmFmNjUyYWQ0YmFjNmE2YQ==" /></div>
                         <h5 class="ds2s-column-subtitle">Leveling Kits</h5>
                     </div>
                     <div class="ds2s-column">
@@ -375,7 +384,8 @@
                         <div class="paragraph">
                             <h3 class="ds2u-font-heading-h3" style="margin: 0px;">What It Is</h3>
                             <p style="margin: 0px;">
-                                Description
+                                The blind spot radar is a component located on the back rear corners of a vehicle. This system uses radar to detect other 
+                                vehicles that are located in the driver's blind spot.
                             </p>
                         </div>
                     </div>
@@ -385,7 +395,8 @@
                     <div class="paragraph vertical">
                         <h3 class="ds2u-font-heading-h3" style="margin: 0px;">What It Does</h3>
                         <p style="margin-bottom: 0px;">
-                            Description 
+                            Working alone, or in conjunction with other ADAS camera systems, the system will display an audible or visual warning to the driver to alert them of
+                            an approaching vehicle to prevent them from changing lanes prematurely. 
                         </p>
                     </div>
                     <div class="content-layout">
