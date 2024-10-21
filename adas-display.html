@@ -253,11 +253,11 @@
 
             <path id="camera" name="Side Cameras" data-linked-modal="surround-view-modal" fill="url(#camera-left-right)" class="ford honda hyundai mitsubishi" d="M 555 235 L 480 160 Q 602.5 85, 725 160 L 650 235 Z M 555 365 L 480 440 Q 602.5 515, 725 440 L 650 365 Z"/>
             <path id="radar" name="Blind Spot Radar" data-linked-modal="blind-spot-modal" fill="url(#radar-left-right)" class="bmw ford honda hyundai mitsubishi" d="M 480 235 C 385 150, 530 45, 525 235 Z M 480 365 C 385 450, 530 555, 525 365 Z"/>
-            <path id="radar" name="Front-Facing Radar (Long)" data-linked-modal="front-radar-modal-long" fill="url(#radar-right-left)" class="ford honda hyundai mitsubishi" d="M 770 300 L 1060 235 Q 1085 301, 1060 367 Z"/>
-            <path id="radar" name="Front-Facing Radar (Short)" data-linked-modal="front-radar-modal-short" fill="url(#radar-right-left)" class="bmw honda mitsubishi" d="M 770 300 L 975 192 Q 1025 301, 975 410 Z"/>
+            <path id="radar" name="Front-Facing Radar (Long)" data-linked-modal="long-radar-modal" fill="url(#radar-right-left)" class="ford honda hyundai mitsubishi" d="M 770 300 L 1060 235 Q 1085 301, 1060 367 Z"/>
+            <path id="radar" name="Front-Facing Radar (Short)" data-linked-modal="lidar-radar-modal" fill="url(#radar-right-left)" class="bmw honda mitsubishi" d="M 770 300 L 975 192 Q 1025 301, 975 410 Z"/>
             <path id="camera"  name="Front-Facing Camera" data-linked-modal="front-camera-modal" fill="url(#camera-left-right)" class="bmw ford honda hyundai toyota mitsubishi" d="M 628 300 L 900 170 Q 950 300, 900 430 Z"/>
             <path id="camera" name="Back-Facing Camera" data-linked-modal="back-camera-modal" fill="url(#camera-right-left)" class="bmw ford honda hyundai toyota mitsubishi" d="M 430 300 L 300 190 Q 220 300, 300 410 Z"/>
-            <path id="radar" name="Cross-Traffic Alert Radar" data-linked-modal="front-traffic-radar-modal" fill="url(#radar-right-left)" class="bmw honda hyundai toyota nissan" d="M 740 235 C 740 235, 920 100, 845 255 C 840 250, 960 300, 850 360 C 845 365, 920 500, 740 370 C 785 370, 785 230, 740 235 Z"/>
+            <path id="radar" name="Short Range Radar" data-linked-modal="short-radar-modal" fill="url(#radar-right-left)" class="bmw honda hyundai toyota nissan" d="M 740 235 C 740 235, 920 100, 845 255 C 840 250, 960 300, 850 360 C 845 365, 920 500, 740 370 C 785 370, 785 230, 740 235 Z"/>
             <path id="ultrasound" name="Front Ultrasound" data-linked-modal="front-ultrasound-modal" fill="url(#ultrasound-right-left)" class="honda toyota nissan mitsubishi" d="M 740 235 C 855 110, 855 490, 740 365 C 785 370, 785 230, 740 235 Z"/>
             <path id="radar" name="Collision Warning Radar" data-linked-modal="back-radar-modal" fill="url(#radar-left-right)" class="honda toyota nissan mitsubishi" d="M 475 235 C 300 110, 300 300, 375 300 C 300 300, 300 485, 475 365 C 413 370, 413 230, 475 235 Z"/>
             <path id="ultrasound" name="Back Ultrasound" data-linked-modal="back-ultrasound-modal" fill="url(#ultrasound-left-right)" class="ford honda hyundai toyota nissan mitsubishi" d="M 475 235 C 360 110, 360 490, 475 365 C 413 370, 413 230, 475 235 Z"/>
@@ -466,7 +466,7 @@
             </div>
         </div>
 
-        <div id="front-radar-modal-long" class="ds2c-modal">
+        <div id="long-radar-modal" class="ds2c-modal">
             <div class="ds2u-popup-close-button"></div>
             <div class="modal-content">
                 <h1 class="ds2u-font-heading-h1">Long-Range Front Radar</h1>
@@ -496,7 +496,8 @@
                     <div class="paragraph vertical">
                         <h3 class="ds2u-font-heading-h3" style="margin: 0px;">What It Does</h3>
                         <p style="margin-bottom: 0px;">
-                            Description 
+                            The long-range, front-facing radar assists in ADAS functions such as <strong>adaptive cruise control</strong>, <strong>automatic emergency braking</strong>, <strong>forward collision warnings</strong>, 
+                            and <strong>front lane change assistance</strong>. 
                         </p>
                     </div>
                     <div class="content-layout">
@@ -566,10 +567,10 @@
             </div>
         </div>
 
-        <div id="front-radar-modal-short" class="ds2c-modal">
+        <div id="lidar-radar-modal" class="ds2c-modal">
             <div class="ds2u-popup-close-button"></div>
             <div class="modal-content">
-                <h1 class="ds2u-font-heading-h1">Front-Facing Radar</h1>
+                <h1 class="ds2u-font-heading-h1">Front-Facing Lidar</h1>
                 <div class="paragraph vertical">
                     <h3 class="ds2u-font-heading-h3" style="margin: 0px;">Service / Calibration Time</h3>
                     <div style="display: flex; gap: 2rem;">
@@ -586,7 +587,7 @@
                         <div class="paragraph">
                             <h3 class="ds2u-font-heading-h3" style="margin: 0px;">What It Is</h3>
                             <p style="margin: 0px;">
-                                Forward-facing radars detect vehicles and objects in front of the driver. 
+                                LiDAR (Light Detection and Ranging) technology uses lasers to...
                             </p>
                         </div>
                     </div>
@@ -596,8 +597,7 @@
                     <div class="paragraph vertical">
                         <h3 class="ds2u-font-heading-h3" style="margin: 0px;">What It Does</h3>
                         <p style="margin-bottom: 0px;">
-                            The front-facing radar assists in ADAS functions such as <strong>adaptive cruise control</strong>, <strong>automatic emergency braking</strong>, <strong>forward collision warnings</strong>, 
-                            and <strong>front lane change assistance</strong>.
+                            Description
                         </p>
                     </div>
                     <div class="content-layout">
@@ -868,10 +868,10 @@
             </div>
         </div>
 
-        <div id="front-traffic-radar-modal" class="ds2c-modal">
+        <div id="short-radar-modal" class="ds2c-modal">
             <div class="ds2u-popup-close-button"></div>
             <div class="modal-content">
-                <h1 class="ds2u-font-heading-h1">Cross-Traffic Radars</h1>
+                <h1 class="ds2u-font-heading-h1">Short-Range Radars</h1>
                 <div class="paragraph vertical">
                     <h3 class="ds2u-font-heading-h3" style="margin: 0px;">Service / Calibration Time</h3>
                     <div style="display: flex; gap: 2rem;">
@@ -888,7 +888,7 @@
                         <div class="paragraph">
                             <h3 class="ds2u-font-heading-h3" style="margin: 0px;">What It Is</h3>
                             <p style="margin: 0px;">
-                                Description
+                                Placed towards the front of the dash, short-range radars 
                             </p>
                         </div>
                     </div>
@@ -898,7 +898,8 @@
                     <div class="paragraph vertical">
                         <h3 class="ds2u-font-heading-h3" style="margin: 0px;">What It Does</h3>
                         <p style="margin-bottom: 0px;">
-                            Description 
+                            Short range radars assist in ADAS functions such as <strong>cross-traffic alerts</strong>, <strong>collision avoidance</strong>, <strong>pedestrian detection</strong> 
+                            and <strong>lane change assist</strong>.
                         </p>
                     </div>
                     <div class="content-layout">
