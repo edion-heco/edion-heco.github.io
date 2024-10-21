@@ -35,7 +35,7 @@ async function getOems() { // function to set list of OEM names, returns OEM tit
     return oems; 
 }
 
-async function getComponents(oem) { // function to set list of OEM names, returns OEM title
+async function getComponents(oem) { // function to set list of OEM names, returns OEM component array
     let data = await getData(); 
     const components = data[oem]; 
     return components; 
@@ -51,9 +51,7 @@ async function toggleOem(oem) { // uses awaited data from json call to toggle vi
     }
 }
 
-async function main() {
-    let oems = await getOems();
-    let data = await getData();
+async function populateList(oems, data) {
     for (let i = 0; i < oemBtns.length; i++) {
         oemBtns[i].addEventListener("click", function() {
             oemList.classList.remove("hidden"); 
@@ -80,6 +78,12 @@ async function main() {
             }
         });
     }
+}
+
+async function main() {
+    let oems = await getOems();
+    let data = await getData();
+    populateList(oems, data); 
 }
 
 main(); 
