@@ -12,7 +12,7 @@
                     "brandedname": "Forward Collision Mitigation"
                 },
                 {
-                    "componenttype": "radar",
+                    "componenttype": "camera",
                     "brandedname": "Lane Keeping Assistant"
                 },
                 {

@@ -10,7 +10,7 @@ navToggle.addEventListener("click", function() {
 
 //OEM List JSON Parsing
 var componentButtons = document.getElementsByClassName("componentBtn"); 
-var svgShapes = document.getElementsByClassName("svg-shape");  
+var svgShapes = document.getElementsByTagName("path");  
 const oemBtns = document.getElementsByClassName("oem-button");
 const oemList = document.getElementById("oem-list");
 const oemListTitle = document.getElementById("oem-list-title");
