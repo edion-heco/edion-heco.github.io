@@ -858,15 +858,15 @@
                     "brandedname": "Pre-Collision Braking"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Cruise Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind-Spot Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Cross Traffic Alert"
                 },
                 {
@@ -882,11 +882,11 @@
                     "brandedname": "Sway Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Automatic Emergency Steering"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Pre-Collision Throttle Management"
                 },
                 {
