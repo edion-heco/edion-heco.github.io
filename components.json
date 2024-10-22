@@ -338,7 +338,7 @@
                     "brandedname": "Blind-Spot Collision Avoidance Assist"
                 },
                 {
-                    "componenttype": "rear",
+                    "componenttype": "radar",
                     "brandedname": "Blind-Spot View Monitor"
                 },
                 {
@@ -740,15 +740,15 @@
                     "brandedname": "Intelligent View Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Intelligent Forward Collision Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Automatic Emergency Braking with Pedestrian Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Automatic Braking"
                 },
                 {
