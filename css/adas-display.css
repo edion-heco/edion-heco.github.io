@@ -72,6 +72,18 @@ a {
     justify-content: space-between; 
 }
 
+#hunter-logo {
+    z-index: 5; 
+    position: absolute; 
+    bottom: 2rem; 
+    left: 2rem; 
+    max-height: 40px; 
+}
+
+#hunter-logo > img {
+    height: 40px;
+}
+
 .nav-content {
     display: flex;
     flex-direction: column;
