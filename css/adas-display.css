@@ -57,7 +57,8 @@ a {
     height: 100vh;
     max-height: 100%; 
     transform: translateX(-100%); 
-    background-color: #0D111A;  
+    background-color: #0D111A;
+    z-index: 4;   
 }
 
 #nav-control {
@@ -72,8 +73,16 @@ a {
     justify-content: space-between; 
 }
 
-#hunter-logo {
+#reset {
     z-index: 5; 
+    position: absolute; 
+    top: 2rem; 
+    right: 2rem; 
+    height: 30px; 
+}
+
+#hunter-logo {
+    z-index: 3; 
     position: absolute; 
     bottom: 2rem; 
     left: 2rem; 

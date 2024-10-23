@@ -1,3 +1,12 @@
+//Refresh Page 
+const refreshButton = document.getElementById("reset");
+
+const refreshPage = () => {
+  location.reload();
+}
+
+refreshButton.addEventListener("click", refreshPage);
+
 //Navigation Script
 var navToggle = document.getElementById("nav-control"); 
 var nav = document.getElementById("nav");
