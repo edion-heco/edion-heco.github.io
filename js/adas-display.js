@@ -92,7 +92,13 @@ main();
 var modalContainers = document.getElementsByClassName("ds2c-modal-container");
 var modals = document.getElementsByClassName("ds2c-modal"); 
 
+var linkButtons = document.getElementsByClassName("linkBtn"); 
+
 var modalContainer = modalContainers[0]; 
+
+for (let i = 0; i < linkButtons.length; i++) {
+    modalContainer.initModal(document.getElementById(linkButtons[i].getAttribute("data-linked-modal")), linkButtons[i]);
+}
 
 for (let i = 0; i < componentButtons.length; i++) {
     modalContainer.initModal(document.getElementById(componentButtons[i].getAttribute("data-linked-modal")), componentButtons[i]);
