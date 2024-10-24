@@ -19,7 +19,7 @@ navToggle.addEventListener("click", function() {
 
 //OEM List JSON Parsing
 var componentButtons = document.getElementsByClassName("componentBtn"); 
-var svgShapes = document.getElementsByTagName("path");  
+var svgShapes = document.getElementsByClassName("svgShape");  
 const oemBtns = document.getElementsByClassName("oem-button");
 const oemList = document.getElementById("oem-list");
 const oemListTitle = document.getElementById("oem-list-title");
@@ -101,7 +101,7 @@ main();
 var modalContainers = document.getElementsByClassName("ds2c-modal-container");
 var modals = document.getElementsByClassName("ds2c-modal"); 
 
-var linkButtons = document.getElementsByClassName("linkBtn"); 
+var linkButtons = document.getElementsByClassName("linkBtn");
 
 var modalContainer = modalContainers[0]; 
 
