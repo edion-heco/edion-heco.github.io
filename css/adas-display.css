@@ -406,6 +406,15 @@ a {
     line-height: 1.5rem !important; 
 }
 
+.internal .ds2s-column .ds2s-column-subtitle {
+    font-size: 1.375rem !important; 
+    line-height: 2.00000625rem !important; 
+}
+
+.internal .ds2s-column {
+    width: 15rem !important; 
+}
+
 .divider {
     width: 3px; 
     height: 150px; 
