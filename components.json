@@ -292,7 +292,7 @@
                     "brandedname": "Cross Traffic Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Auto High Beam Headlights"
                 },
                 {
@@ -338,7 +338,7 @@
                     "brandedname": "Blind-Spot Collision Avoidance Assist"
                 },
                 {
-                    "componenttype": "radar",
+                    "componenttype": "camera",
                     "brandedname": "Blind-Spot View Monitor"
                 },
                 {
@@ -354,7 +354,7 @@
                     "brandedname": "Driver Attention Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "High Beam Assist"
                 },
                 {
@@ -370,7 +370,7 @@
                     "brandedname": "Highway Driving Assist 2"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Downhill Braking Control"
                 },
                 {
@@ -490,11 +490,11 @@
             "name":"Mazda",
             "components": [
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Front-Lighting System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "High Beam Control System"
                 },
                 {
@@ -664,7 +664,7 @@
                     "brandedname": "Active Lane Change Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Highbeam Assist"
                 },
                 {
@@ -760,7 +760,7 @@
                     "brandedname": "Lane Departure Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "High Beam Assist"
                 },
                 {
@@ -886,7 +886,7 @@
                     "brandedname": "Pre-Collision Throttle Management"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Reverse Automatic Braking"
                 }
             ]
@@ -916,7 +916,7 @@
                     "brandedname": "Road Sign Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Automatic High Beams"
                 },
                 {
