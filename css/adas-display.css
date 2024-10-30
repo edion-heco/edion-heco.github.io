@@ -396,3 +396,18 @@ a {
     height: 10px; 
     background-color: var(--ds2f-default-color); 
 }
+
+.ds2c-columns .ds2s-column {
+    width: 10rem !important; 
+}
+
+.ds2c-columns .ds2s-column .ds2s-column-subtitle {
+    font-size: 1rem !important; 
+    line-height: 1.5rem !important; 
+}
+
+.divider {
+    width: 3px; 
+    height: 150px; 
+    background-color: #EBEEF5;
+}
