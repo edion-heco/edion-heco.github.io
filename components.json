@@ -498,15 +498,15 @@
                     "brandedname": "High Beam Control System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Glare-Free Beams"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Wide Range Low Beams"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Highway Mode"
                 },
                 {
@@ -526,23 +526,23 @@
                     "brandedname": "Lane Departure Avoidance"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind-Spot Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Cross Traffic Alert"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "I-Activ AWD"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Hill Launch Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Mazda Rear Cruise Control"
                 },
                 {
@@ -554,11 +554,11 @@
                     "brandedname": "Lane Departure Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Emergency Signal System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Forward Obstruction Warning"
                 },
                 {
@@ -566,7 +566,7 @@
                     "brandedname": "Brake Assist and Electronic Brake-Force Distribution"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "The Dynamic Stability Control & Traction Control System"
                 },
                 {
@@ -574,11 +574,11 @@
                     "brandedname": "Acceleration Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Smart City Brake Support"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Smart Brake Support"
                 }
             ]
