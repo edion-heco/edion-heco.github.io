@@ -182,7 +182,7 @@
                     "brandedname": "Chevrolet Safety Assist +"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Forward Collision Alert & Automatic Braking"
                 },
                 {
@@ -198,19 +198,19 @@
                     "brandedname": "HD Rear Vision Camera"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Automatic Emergency Braking"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Rear Park Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Lane Change Alert with Side Blind Zone Alert"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Cross Traffic Alert"
                 },
                 {
@@ -218,11 +218,11 @@
                     "brandedname": "Following Distance Indicator"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Cruise Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Cadillac Super Cruise"
                 }
             ]
