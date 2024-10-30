@@ -588,15 +588,15 @@
             "name":"Mercedes-Benz",
             "components": [
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Active Brake System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Cross-Traffic Alert"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot Assist with Exit Warning Assist"
                 },
                 {
@@ -604,15 +604,15 @@
                     "brandedname": "PreSafe"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Attention Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Crosswind Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Parktronic with Active Parking Assist"
                 },
                 {
@@ -624,35 +624,35 @@
                     "brandedname": "Adaptive Braking Technology"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Brake Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "4-Wheel Electronic Traction System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Advanced Tire Pressure Monitoring System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Electric Parking Brake"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Active Distance Assist Distronic"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Active Steering Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Evasive Steering Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Congestion Emergency Braking"
                 },
                 {
@@ -660,7 +660,7 @@
                     "brandedname": "Active Speed Limit Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Active Lane Change Assist"
                 },
                 {
@@ -668,7 +668,7 @@
                     "brandedname": "Adaptive Highbeam Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Active Blind Spot Assist"
                 },
                 {
@@ -678,10 +678,6 @@
                 {
                     "componenttype": "camera",
                     "brandedname": "Surround View System"
-                },
-                {
-                    "componenttype": "camera",
-                    "brandedname": "Speed Limit Assist"
                 },
                 {
                     "componenttype": "camera",
