@@ -93,6 +93,14 @@ a {
     height: 40px;
 }
 
+#disclaimer {
+    z-index: 3; 
+    position: absolute; 
+    bottom: 2rem; 
+    right: 2rem; 
+    width: 20rem;  
+}
+
 .nav-content {
     display: flex;
     flex-direction: column;
