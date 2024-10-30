@@ -904,7 +904,7 @@
                     "brandedname": "Pre-Collision System with Pedestrian Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Dynamic Radar Cruise Control"
                 },
                 {
@@ -912,7 +912,7 @@
                     "brandedname": "Lane Departure Alert with Steering Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Lane Tracing Assist"
                 },
                 {
@@ -932,15 +932,15 @@
                     "brandedname": "Toyota Safety Sense"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Electric Parking Brake"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Full-Speed Range Dynamic Radar Cruise Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Front and Rear Parking Assist with Automatic Braking"
                 },
                 {
@@ -948,7 +948,7 @@
                     "brandedname": "Star Safety System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot Monitor with Rear Cross-Traffic Alert"
                 },
                 {
@@ -956,15 +956,15 @@
                     "brandedname": "Integrated Backup Camera"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Safe Exit Alert"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Lexus Parking Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Front Cross Traffic Alert"
                 },
                 {
