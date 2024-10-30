@@ -740,7 +740,7 @@
                     "brandedname": "Intelligent Forward Collision Warning"
                 },
                 {
-                    "componenttype": "radar",
+                    "componenttype": "camera",
                     "brandedname": "Automatic Emergency Braking with Pedestrian Detection"
                 },
                 {
@@ -748,11 +748,11 @@
                     "brandedname": "Rear Automatic Braking"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Cross Traffic Alert"
                 },
                 {
@@ -764,11 +764,11 @@
                     "brandedname": "High Beam Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Front Pedestrian Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Collision System"
                 },
                 {
@@ -780,7 +780,7 @@
                     "brandedname": "Traffic Sign Information"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Hill Hold Control"
                 },
                 {
@@ -796,15 +796,15 @@
                     "brandedname": "Active Lane Keep Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Driver Attention Monitor"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Cruise Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Rear Parking Sensors"
                 },
                 {
@@ -812,7 +812,7 @@
                     "brandedname": "Around View Monitor with Moving Object Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot Intervention"
                 },
                 {
@@ -820,23 +820,23 @@
                     "brandedname": "Lane Departure Intervention"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Predictive Forward Collision Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Direct Adaptive Steering"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Intelligent Cruise Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Predictive Forward Emergency Braking and Backup Collision Intervention"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Cross Traffic Alert"
                 }
             ]
