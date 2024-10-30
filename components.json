@@ -54,7 +54,7 @@
             "name":"Chrysler, Dodge, Jeep, Ram",
             "components": [
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Adaptive Cruise Control with Stop and Go"
                 },
                 {
@@ -62,23 +62,23 @@
                     "brandedname": "LaneSense Lane Departure Warning"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Full-Speed Forward Collision Warning with Active Braking"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Pedestrian Automatic Emergency Braking System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Blind Spot Monitoring System with Rear Crossing Path Detection"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "ParkSense Front and Rear Park Assist"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Rear Cross Path Detection"
                 },
                 {
@@ -86,7 +86,7 @@
                     "brandedname": "360 Surround View Camera"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "ultrasound",
                     "brandedname": "Parallel and Perpendicular Park Assist"
                 },
                 {
@@ -98,11 +98,11 @@
                     "brandedname": "ParkView Rear Backup Camera"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Intelligent Speed Control"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "internal",
                     "brandedname": "Driver Attention Alert"
                 },
                 {
@@ -114,7 +114,7 @@
                     "brandedname": "Highway Assist System"
                 },
                 {
-                    "componenttype": "camera",
+                    "componenttype": "radar",
                     "brandedname": "Active Blind Spot Assist"
                 },
                 {
