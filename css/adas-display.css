@@ -213,9 +213,14 @@ a {
     flex-direction: column; 
 }
 
-/* .content-layout > .content-layout {
-    padding: 1rem; 
-} */
+.two-item {
+    width: 49.9%;
+}
+
+.two-item > img {
+    max-width: 100%; 
+    max-height: 300px; 
+}
 
 .three-item {
     width: 33.3%;
