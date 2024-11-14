@@ -69,29 +69,30 @@
         </div>
 
         <video autoplay muted loop id="background-video">
-        <!-- <video muted loop id="background-video"> -->
             <source src="https://globalassets.hunter.com/download/assets/ADAS-App-Background-RoadCars-Vignette.mp4/d8283dfa85a011efa7be064e6f3513dc?attachment=false" type="video/mp4">
         </video>
         
-        <h1 class="ds2u-font-heading-oversized white-text" style="margin: 10;">What is ADAS?</h1>
+        <div id="heading">
+            <h1 class="ds2u-font-heading-oversized white-text" style="margin: 10;">What is ADAS?</h1>
 
-        <div class="button-row">
-            <button class="componentBtn camera ds2c-button icon-last" data-linked-modal="camera-modal">
-                <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-camera-white.svg/Zz1mMmMwYzM3YTZhOWIxMWVkYTIzM2NlOWJmNTgyYzk3OA=="></div>
-                Camera
-            </button>
-            <button class="componentBtn radar ds2c-button icon-last" data-linked-modal="radar-modal">
-                <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-reflector-white.svg/Zz1lZDI3OGExNDM4NTExMWVlOTc2MDVlNjJiNzAwZmM3Mw=="></div>
-                Radar
-            </button>
-            <button class="componentBtn ultrasound ds2c-button icon-last" data-linked-modal="ultrasound-modal">
-                <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-front-white.svg/Zz1lZDI4ZmJjZTM4NTExMWVlODAzZmRlOGE4NGRjMzEzNg=="></div>
-                Ultrasound
-            </button>
-            <button class="componentBtn internal ds2c-button icon-last" data-linked-modal="internal-modal">
-                <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-steering-white.svg/Zz02NDcwNjhmNDZhOWMxMWVkYjFkZjhhY2MyOTAyZjJlYQ=="></div>
-                Internal
-            </button>
+            <div class="button-row">
+                <button class="componentBtn camera ds2c-button icon-last" data-linked-modal="camera-modal">
+                    <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-camera-white.svg/Zz1mMmMwYzM3YTZhOWIxMWVkYTIzM2NlOWJmNTgyYzk3OA=="></div>
+                    Camera
+                </button>
+                <button class="componentBtn radar ds2c-button icon-last" data-linked-modal="radar-modal">
+                    <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-reflector-white.svg/Zz1lZDI3OGExNDM4NTExMWVlOTc2MDVlNjJiNzAwZmM3Mw=="></div>
+                    Radar
+                </button>
+                <button class="componentBtn ultrasound ds2c-button icon-last" data-linked-modal="ultrasound-modal">
+                    <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-radar-front-white.svg/Zz1lZDI4ZmJjZTM4NTExMWVlODAzZmRlOGE4NGRjMzEzNg=="></div>
+                    Ultrasound
+                </button>
+                <button class="componentBtn internal ds2c-button icon-last" data-linked-modal="internal-modal">
+                    <div class="ds2s-button-image"><img src="https://globalassets.hunter.com/images/assets/icon-adas-steering-white.svg/Zz02NDcwNjhmNDZhOWMxMWVkYjFkZjhhY2MyOTAyZjJlYQ=="></div>
+                    Internal
+                </button>
+            </div>
         </div>
 
         <div id="camera-modal" class="ds2c-modal">
@@ -1453,74 +1454,76 @@
             </div>
         </div>
 
-        <div class="button-row">
-            <button id="bmwBtn" class="oem-button ds2c-button ds2m-light">
-                <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-bmw-color.png/Zz1mOTQxYmYxY2FiZjIxMWVlOTc5YTY2ZmZjOWRlYzA5OA==">
-                <img class="split-btn" style="align-self: flex-end;"src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mini-color.png/Zz1mOTFjYzQyOGFiZjIxMWVlOTk5NjA2ZjVlYzU4YjIwZA==">
-            </button>
-
-            <button id="chryslerBtn" class="oem-button four ds2c-button ds2m-light">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-chrysler-color.png/Zz1mOTcxN2NkZWFiZjIxMWVlOGM1OWVlYWI4NmIxNjFkNg==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-dodge-color.png/Zz1mOGIzYWIyOGFiZjIxMWVlOWQxMDJhMmU0OWFiNWI4NA==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-jeep-black.png/Zz1mODdiZmVhOGFiZjIxMWVlOGFjZDc2Mzg0Y2QwZjQ3Yw==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-ram%28dodge%29-color.png/Zz1mOTgzMmFjZWFiZjIxMWVlYTI1MzIyMjEyZDg0ZjJhNA==">
-            </button>
-
-            <button id="fordBtn" class="oem-button ds2c-button ds2m-light">
-                <div class="oem-container">
-                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-ford-color.png/Zz1mODY1ZWYwMGFiZjIxMWVlOWY3NDZhNjc5ODBmNjEyNw==">
-                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-lincoln-color.png/Zz1mN2E5MWJhYWFiZjIxMWVlOTM1Yjg2MDkzNjdlODEzYw==">
-                </div>
-            </button>
-
-            <button id="gmBtn" class="oem-button four ds2c-button ds2m-light">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-buick-color.png/Zz1mODUxMmQyY2FiZjIxMWVlYjkyNmMyODg0MmY3OTYyYw==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-chevrolet-color.png/Zz1mN2M4MWE0NmFiZjIxMWVlYTMzZDZhNjc5ODBmNjEyNw==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-cadillac-color.png/Zz1mODc1NTY3YWFiZjIxMWVlYjUyZjg2MDkzNjdlODEzYw==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-gmc-color.png/Zz1mNzlkODMzYWFiZjIxMWVlYjdhZDI2NDQ4ZDRkMjU5OQ==">
-            </button>
-
-            <button id="hondaBtn" class="oem-button ds2c-button ds2m-light">
-                <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-honda-color.png/Zz1mODNmOGY1ZWFiZjIxMWVlYTI5OTg2MDkzNjdlODEzYw==">
-                <img class="split-btn" style="align-self: flex-end;"src="https://globalassets.hunter.com/images/assets/logo-customer-oem-acura-color.png/Zz1mN2FlOGZmZWFiZjIxMWVlOGViMTZhNjc5ODBmNjEyNw==">
-            </button>
-
-            <button id="hyundaiBtn" class="oem-button three ds2c-button ds2m-light">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-hyundai-black.png/Zz1mNzkwNDNmYWFiZjIxMWVlYWMzNGQ2YmRjMWI0ZmQ3Mw==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-genesis-color.png/Zz1mNzkwOTk5YWFiZjIxMWVlYThmNWE2YTE5Zjk2ODZhYw==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-kia-color.png/Zz1mOGM4NTdkMGFiZjIxMWVlYWIzOTIyMDI5ODMxNmI0Yg==">
-            </button>
-
-            <button id="jaguarBtn" class="oem-button ds2c-button ds2m-light">
-                <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-jaguar-color.png/Zz1mOTUyZjVhMmFiZjIxMWVlYmNmMGVhY2IyNTAxOTg4Mw==">
-                <img class="split-btn" style="align-self: flex-end;"src="https://globalassets.hunter.com/images/assets/logo-customer-oem-landrover-color.png/Zz1mODdkMzA2NmFiZjIxMWVlOGMzYTZhNjc5ODBmNjEyNw==">
-            </button>
-
-            <button id="mazdaBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mazda-primary-color.png/Zz1mOTZmNTk5YWFiZjIxMWVlYmM4YmVhY2IyNTAxOTg4Mw==" style="max-width: 75px; max-height: 75px;"></button>
-
-            <button id="mercedesBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mercedesbenz-stacked-color.png/Zz1mODYxNmU4MGFiZjIxMWVlYWNiOGQ2ZWI3Zjc3NjkyYw==" style="max-width: 75px; max-height: 75px;"></button>
-
-            <button id="mitsubishiBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mitsubishi-color.png/Zz1mOTJjYjhjZWFiZjIxMWVlOWQyZDA2ZjVlYzU4YjIwZA==" style="max-width: 75px; max-height: 75px;"></button>
-
-            <button id="nissanBtn" class="oem-button ds2c-button ds2m-light">
-                <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-nissan-color.png/Zz1mOTk3MWNkMmFiZjIxMWVlODhjMDY2ZmZjOWRlYzA5OA==">
-                <img class="split-btn" style="align-self: flex-end;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-infiniti-color.png/Zz1mNzhmZTExMmFiZjIxMWVlODVmM2E2YTE5Zjk2ODZhYw==">
-            </button>
-
-            <button id="subaruBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-subaru-stacked-color.png/Zz1mNzk2NTQzNGFiZjIxMWVlYWIxN2Q2YmRjMWI0ZmQ3Mw==" style="max-width: 75px; max-height: 75px;"></button>
-
-            <button id="toyotaBtn" class="oem-button ds2c-button ds2m-light">
-                <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-toyota-color.png/Zz1mNzllMjdjY2FiZjIxMWVlYjllNmQyY2FjODMzZjkzMw==">
-                <img class="split-btn" style="align-self: flex-end;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-lexus-secondary-color.png/Zz1mOGEwYTRkOGFiZjIxMWVlODg4ZTc2Mzg0Y2QwZjQ3Yw==">
-            </button>
-
-            <button id="vwBtn" class="oem-button three ds2c-button ds2m-light">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-vw-color.png/Zz1mNzliMzNhMGFiZjIxMWVlOGU4OWE2YTE5Zjk2ODZhYw==" style="max-width: 25px;">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-audi-color.png/Zz1mOTY1NDAyMmFiZjIxMWVlOGE4OGVlYWI4NmIxNjFkNg==">
-                <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-porsche-textonly-color.png/Zz1mOWFjYTczY2FiZjIxMWVlODExZTY2ZmZjOWRlYzA5OA==">
-            </button>
+        <div id="oem-buttons">
+            <div class="button-row">
+                <button id="bmwBtn" class="oem-button ds2c-button ds2m-light">
+                    <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-bmw-color.png/Zz1mOTQxYmYxY2FiZjIxMWVlOTc5YTY2ZmZjOWRlYzA5OA==">
+                    <img class="split-btn" style="align-self: flex-end;"src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mini-color.png/Zz1mOTFjYzQyOGFiZjIxMWVlOTk5NjA2ZjVlYzU4YjIwZA==">
+                </button>
+    
+                <button id="chryslerBtn" class="oem-button four ds2c-button ds2m-light">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-chrysler-color.png/Zz1mOTcxN2NkZWFiZjIxMWVlOGM1OWVlYWI4NmIxNjFkNg==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-dodge-color.png/Zz1mOGIzYWIyOGFiZjIxMWVlOWQxMDJhMmU0OWFiNWI4NA==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-jeep-black.png/Zz1mODdiZmVhOGFiZjIxMWVlOGFjZDc2Mzg0Y2QwZjQ3Yw==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-ram%28dodge%29-color.png/Zz1mOTgzMmFjZWFiZjIxMWVlYTI1MzIyMjEyZDg0ZjJhNA==">
+                </button>
+    
+                <button id="fordBtn" class="oem-button ds2c-button ds2m-light">
+                    <div class="oem-container">
+                        <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-ford-color.png/Zz1mODY1ZWYwMGFiZjIxMWVlOWY3NDZhNjc5ODBmNjEyNw==">
+                        <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-lincoln-color.png/Zz1mN2E5MWJhYWFiZjIxMWVlOTM1Yjg2MDkzNjdlODEzYw==">
+                    </div>
+                </button>
+    
+                <button id="gmBtn" class="oem-button four ds2c-button ds2m-light">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-buick-color.png/Zz1mODUxMmQyY2FiZjIxMWVlYjkyNmMyODg0MmY3OTYyYw==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-chevrolet-color.png/Zz1mN2M4MWE0NmFiZjIxMWVlYTMzZDZhNjc5ODBmNjEyNw==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-cadillac-color.png/Zz1mODc1NTY3YWFiZjIxMWVlYjUyZjg2MDkzNjdlODEzYw==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-gmc-color.png/Zz1mNzlkODMzYWFiZjIxMWVlYjdhZDI2NDQ4ZDRkMjU5OQ==">
+                </button>
+    
+                <button id="hondaBtn" class="oem-button ds2c-button ds2m-light">
+                    <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-honda-color.png/Zz1mODNmOGY1ZWFiZjIxMWVlYTI5OTg2MDkzNjdlODEzYw==">
+                    <img class="split-btn" style="align-self: flex-end;"src="https://globalassets.hunter.com/images/assets/logo-customer-oem-acura-color.png/Zz1mN2FlOGZmZWFiZjIxMWVlOGViMTZhNjc5ODBmNjEyNw==">
+                </button>
+    
+                <button id="hyundaiBtn" class="oem-button three ds2c-button ds2m-light">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-hyundai-black.png/Zz1mNzkwNDNmYWFiZjIxMWVlYWMzNGQ2YmRjMWI0ZmQ3Mw==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-genesis-color.png/Zz1mNzkwOTk5YWFiZjIxMWVlYThmNWE2YTE5Zjk2ODZhYw==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-kia-color.png/Zz1mOGM4NTdkMGFiZjIxMWVlYWIzOTIyMDI5ODMxNmI0Yg==">
+                </button>
+    
+                <button id="jaguarBtn" class="oem-button ds2c-button ds2m-light">
+                    <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-jaguar-color.png/Zz1mOTUyZjVhMmFiZjIxMWVlYmNmMGVhY2IyNTAxOTg4Mw==">
+                    <img class="split-btn" style="align-self: flex-end;"src="https://globalassets.hunter.com/images/assets/logo-customer-oem-landrover-color.png/Zz1mODdkMzA2NmFiZjIxMWVlOGMzYTZhNjc5ODBmNjEyNw==">
+                </button>
+    
+                <button id="mazdaBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mazda-primary-color.png/Zz1mOTZmNTk5YWFiZjIxMWVlYmM4YmVhY2IyNTAxOTg4Mw==" style="max-width: 75px; max-height: 75px;"></button>
+    
+                <button id="mercedesBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mercedesbenz-stacked-color.png/Zz1mODYxNmU4MGFiZjIxMWVlYWNiOGQ2ZWI3Zjc3NjkyYw==" style="max-width: 75px; max-height: 75px;"></button>
+    
+                <button id="mitsubishiBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-mitsubishi-color.png/Zz1mOTJjYjhjZWFiZjIxMWVlOWQyZDA2ZjVlYzU4YjIwZA==" style="max-width: 75px; max-height: 75px;"></button>
+    
+                <button id="nissanBtn" class="oem-button ds2c-button ds2m-light">
+                    <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-nissan-color.png/Zz1mOTk3MWNkMmFiZjIxMWVlODhjMDY2ZmZjOWRlYzA5OA==">
+                    <img class="split-btn" style="align-self: flex-end;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-infiniti-color.png/Zz1mNzhmZTExMmFiZjIxMWVlODVmM2E2YTE5Zjk2ODZhYw==">
+                </button>
+    
+                <button id="subaruBtn" class="oem-button ds2c-button ds2m-light"><img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-subaru-stacked-color.png/Zz1mNzk2NTQzNGFiZjIxMWVlYWIxN2Q2YmRjMWI0ZmQ3Mw==" style="max-width: 75px; max-height: 75px;"></button>
+    
+                <button id="toyotaBtn" class="oem-button ds2c-button ds2m-light">
+                    <img class="split-btn" style="align-self: flex-start;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-toyota-color.png/Zz1mNzllMjdjY2FiZjIxMWVlYjllNmQyY2FjODMzZjkzMw==">
+                    <img class="split-btn" style="align-self: flex-end;" src="https://globalassets.hunter.com/images/assets/logo-customer-oem-lexus-secondary-color.png/Zz1mOGEwYTRkOGFiZjIxMWVlODg4ZTc2Mzg0Y2QwZjQ3Yw==">
+                </button>
+    
+                <button id="vwBtn" class="oem-button three ds2c-button ds2m-light">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-vw-color.png/Zz1mNzliMzNhMGFiZjIxMWVlOGU4OWE2YTE5Zjk2ODZhYw==" style="max-width: 25px;">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-audi-color.png/Zz1mOTY1NDAyMmFiZjIxMWVlOGE4OGVlYWI4NmIxNjFkNg==">
+                    <img src="https://globalassets.hunter.com/images/assets/logo-customer-oem-porsche-textonly-color.png/Zz1mOWFjYTczY2FiZjIxMWVlODExZTY2ZmZjOWRlYzA5OA==">
+                </button>
+            </div>
         </div>
-
+        
         <div id="disclaimer">
             <h6 class=".ds2u-font-caption-small gray-text"><em>Information shown in this display is generalized. Not all data will hold true for every make and model of vehicle available.</em></h6>
         </div>

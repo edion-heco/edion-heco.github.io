@@ -36,10 +36,19 @@ a {
 }
 
 #background-video {
+    display: flex; 
+    align-self: center; 
+    justify-items: center; 
     position: fixed; 
     min-width: 100%; 
     min-height: 100%; 
     z-index: -5;
+}
+
+svg {
+    position: absolute;
+    align-self: center; 
+    justify-self: center; 
 }
 
 .nav-hidden{
@@ -153,6 +162,22 @@ a {
     --ds2f-active-color: #888E9A;
     --ds2f-focus-border-color: #DDE2EB;
     --ds2f-focus-color: #A1A7B2;
+}
+
+#heading {
+    display: flex; 
+    flex-direction: column; 
+    position: absolute; 
+    align-items: center; 
+    top: 1rem; 
+}
+
+#oem-buttons {
+    display: flex; 
+    flex-direction: column; 
+    position: absolute; 
+    align-items: center; 
+    bottom: 1rem; 
 }
 
 .svg-shape {
@@ -362,7 +387,7 @@ a {
 .dark-gradient-left {
     position: fixed; 
     width: 600px; 
-    height: 100vh; 
+    height: 100%; 
     top: 0; 
     left: 0; 
     background: linear-gradient(to right, #0D111A, #0D111A00);
@@ -437,10 +462,4 @@ a {
 
 .internal .ds2s-column {
     width: 15rem !important; 
-}
-
-.divider {
-    width: 3px; 
-    height: 150px; 
-    background-color: #EBEEF5;
 }
