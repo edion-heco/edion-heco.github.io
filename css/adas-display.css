@@ -359,7 +359,17 @@ a {
     z-index: -4; 
 }
 
-.dark-gradient-side {
+.dark-gradient-left {
+    position: fixed; 
+    width: 600px; 
+    height: 100vh; 
+    top: 0; 
+    left: 0; 
+    background: linear-gradient(to right, #0D111A, #0D111A00);
+    z-index: -4; 
+}
+
+.dark-gradient-right {
     position: fixed; 
     width: 600px; 
     height: 100vh; 
