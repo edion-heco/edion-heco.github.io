@@ -43,11 +43,13 @@ a {
     min-width: 100%; 
     min-height: 100%; 
     z-index: -5;
+    zoom: .75; 
 }
 
 svg {
     align-self: center; 
     justify-self: center; 
+    zoom: .75; 
 }
 
 .nav-hidden{
@@ -171,12 +173,17 @@ svg {
     top: 1rem; 
 }
 
+#category-buttons {
+    zoom: .75; 
+}
+
 #oem-buttons {
     display: flex; 
     flex-direction: column; 
     position: absolute; 
     align-items: center; 
     bottom: 1rem; 
+    zoom: .75; 
 }
 
 .svg-shape {
