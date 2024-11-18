@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=.75, maximum-scale=.75, user-scalable=0">
     </head>
     <body>
-        <div class="dark-gradient-top"></div>
+        <!-- <div class="dark-gradient-top"></div>
         <div class="dark-gradient-left"></div>
         <div class="dark-gradient-right"></div>
+        <div class="dark-gradient"></div> -->
         <div id="hunter-logo">
             <img src="./img/logo-hunter-gray.svg">
         </div>
@@ -69,9 +70,12 @@
             <div id="oem-list-items"></div>
         </div>
 
-        <video autoplay muted loop id="background-video">
-            <source src="https://globalassets.hunter.com/download/assets/ADAS-App-Background-RoadCars-Vignette.mp4/d8283dfa85a011efa7be064e6f3513dc?attachment=false" type="video/mp4">
-        </video>
+        <div id="video-container">
+            <div class="shadow"></div>
+            <video autoplay muted loop id="background-video">
+                <source src="https://globalassets.hunter.com/download/assets/ADAS-App-Background-RoadCars-Vignette.mp4/d8283dfa85a011efa7be064e6f3513dc?attachment=false" type="video/mp4">
+            </video>
+        </div>
         
         <div id="heading">
             <h1 class="ds2u-font-heading-oversized white-text" style="margin: 1.5rem;">What is ADAS?</h1>
@@ -1528,8 +1532,6 @@
         <div id="disclaimer">
             <h6 class=".ds2u-font-caption-small gray-text"><em>Information shown in this display is generalized. Not all data will hold true for every make and model of vehicle available.</em></h6>
         </div>
-        
-        <div class="dark-gradient"></div>
     </body>
 
     <script src="https://dsgnsystmcssdev110b9785.blob.core.windows.net/hunterds2-latest/ds2-main.js"></script>
