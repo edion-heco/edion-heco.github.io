@@ -226,8 +226,8 @@ path, circle {
 #camera:hover, #radar:hover, #ultrasound:hover, #internal:hover {
     transition: fill-opacity .25s, stroke-width .25s; 
     fill-opacity: 1;
-    stroke-width: 5px;
-    fill-opacity: 1; 
+    stroke-width: 5px !important;
+    fill-opacity: 1 !important; 
 }
 
 .modal-content {
