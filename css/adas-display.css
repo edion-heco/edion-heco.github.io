@@ -376,7 +376,7 @@ svg {
 .dark-gradient {
     position: fixed; 
     width: 100%; 
-    height: 15rem; 
+    height: 20rem; 
     bottom: 0; 
     background: linear-gradient(to top, #0D111A, #0D111A00);
     z-index: -4; 
@@ -385,7 +385,7 @@ svg {
 .dark-gradient-top {
     position: fixed; 
     width: 100%; 
-    height: 15rem; 
+    height: 20rem; 
     top: 0; 
     background: linear-gradient(to bottom, #0D111A, #0D111A00);
     z-index: -4; 
@@ -393,7 +393,7 @@ svg {
 
 .dark-gradient-left {
     position: fixed; 
-    width: 600px; 
+    width: 20rem; 
     height: 100%; 
     top: 0; 
     left: 0; 
@@ -403,7 +403,7 @@ svg {
 
 .dark-gradient-right {
     position: fixed; 
-    width: 600px; 
+    width: 20rem; 
     height: 100vh; 
     top: 0; 
     right: 0; 
