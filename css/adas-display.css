@@ -52,7 +52,7 @@ svg {
     height: 612.5px; 
     align-self: center; 
     justify-self: center; 
-    zoom: .75; 
+    scale: .75; 
 }
 
 .nav-hidden{
@@ -177,7 +177,7 @@ svg {
 }
 
 #category-buttons {
-    zoom: .75; 
+    scale: .75; 
 }
 
 #oem-buttons {
@@ -186,7 +186,7 @@ svg {
     position: absolute; 
     align-items: center; 
     bottom: 1rem; 
-    zoom: .75; 
+    scale: .75; 
 }
 
 .svg-shape {
