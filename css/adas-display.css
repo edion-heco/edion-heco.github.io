@@ -471,3 +471,9 @@ svg {
 .internal .ds2s-column {
     width: 15rem !important; 
 }
+
+.divider {
+    width: 3px; 
+    height: 150px; 
+    background-color: #EBEEF5;
+}
