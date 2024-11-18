@@ -31,6 +31,17 @@ body {
     100% { transform: translateX(-100%); }
 }
 
+@keyframes pulse {
+    0%, 100% { 
+        fill-opacity: 1; 
+        stroke-width: 3px;
+    }
+    75% { 
+        fill-opacity: .75;
+        stroke-width: 1px; 
+    }; 
+}
+
 a {
     text-decoration: none;
 }
@@ -189,10 +200,9 @@ svg {
     scale: .75; 
 }
 
-.svg-shape {
-    border-radius: 2rem;  
-    fill-opacity: 0.75;
-    stroke-width: 1px;
+path, circle {
+    animation: pulse 2s infinite; 
+    border-radius: 2rem; 
 }
 
 #camera {
@@ -217,6 +227,7 @@ svg {
     transition: fill-opacity .25s, stroke-width .25s; 
     fill-opacity: 1;
     stroke-width: 5px;
+    fill-opacity: 1; 
 }
 
 .modal-content {
