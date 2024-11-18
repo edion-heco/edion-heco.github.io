@@ -201,7 +201,7 @@ svg {
 }
 
 path, circle {
-    animation: pulse 2s infinite; 
+    animation: pulse 1.6s infinite; 
     border-radius: 2rem; 
 }
 
