@@ -57,10 +57,11 @@ a {
     scale: .8;  
 }
 
-#video-container > .shadow {
+.shadow {
     position: absolute;
     min-height: 100%; 
-    min-width: 100%; 
+    max-width: 1536px; 
+    width: 100%; 
     box-shadow: 0px 0px 100px 100px #0D111A inset;
 }
 
