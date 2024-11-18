@@ -43,11 +43,13 @@ a {
     min-width: 100%; 
     min-height: 100%; 
     z-index: -5;
-    /* scale: .8;   */
-    zoom: .75; 
+    scale: .8;  
+    /* zoom: .75;  */
 }
 
 svg {
+    width: 1200px; 
+    height: 612.5px; 
     align-self: center; 
     justify-self: center; 
     zoom: .75; 
