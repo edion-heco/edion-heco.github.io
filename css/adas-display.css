@@ -43,6 +43,7 @@ a {
     min-width: 100%; 
     min-height: 100%; 
     z-index: -5;
+    /* scale: .8;   */
     zoom: .75; 
 }
 
@@ -420,8 +421,9 @@ svg {
     right: 0; 
     top: 0; 
     height: 100vh;
-    width: 400px;  
+    width: 25rem;  
     padding-right: 2rem; 
+    scale: .75; 
 }
 
 #oem-list-items {
