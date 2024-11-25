@@ -15,6 +15,7 @@ body {
     justify-content: center;
     background-color: #0D111A; 
     height: 100vh;
+    font-synthesis: none;
 }
 
 @keyframes fadeIn {
