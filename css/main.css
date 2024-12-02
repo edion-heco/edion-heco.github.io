@@ -654,6 +654,9 @@
   border-style: solid;
   display: flex;
   cursor: pointer;
+  font-family: "Roboto Flex V",sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0,"wdth" 90,"GRAD" 50,"XTRA" 468,"XOPQ" 96,"YOPQ" 79,"YTAS" 750,"YTDE" -203,"YTFI" 738,"YTLC" 514,"YTUC" 712;
   --ds2f-default-shadow: none;
   --ds2f-default-color: #C00C00;
   --ds2f-default-border-color: rgba(0,0,0,0);

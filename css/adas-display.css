@@ -51,9 +51,7 @@ a {
 #video-container {
     display: flex; 
     align-self: center; 
-    justify-items: center; 
     position: fixed; 
-    min-width: 100%; 
     min-height: 100%; 
     z-index: -5;
     scale: .8;  
