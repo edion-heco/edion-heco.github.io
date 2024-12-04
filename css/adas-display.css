@@ -216,7 +216,7 @@ svg {
     position: absolute; 
     align-items: center; 
     bottom: 1rem; 
-    scale: .75; 
+    scale: .8;
 }
 
 path, circle {
@@ -361,7 +361,6 @@ path, circle {
 }
 
 .oem-container > img {
-    /* flex-grow: 1;  */
     width: 100%;
     height: auto; 
     max-width: 55px;
@@ -511,16 +510,25 @@ path, circle {
     background-color: #EBEEF5;
 }
 
-@media screen and (max-width: 1480px) {
+@media only screen and (max-device-width: 1480px) {
     #disclaimer {
         opacity: 0; 
     }
 
-    #category-buttons {
+    #category-buttons{
         scale: .75; 
     }
 
     #oem-list {
         width: 18rem; 
+    }
+
+    .oem-button {
+       height: 5rem !important;
+       width: 5rem !important;  
+    }
+
+    #hunter-logo > img {
+        height: 30px; 
     }
 }
