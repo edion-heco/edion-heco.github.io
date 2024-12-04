@@ -206,9 +206,9 @@ svg {
     top: 1rem; 
 }
 
-#category-buttons {
+/* #category-buttons {
     scale: .75; 
-}
+} */
 
 #oem-buttons {
     display: flex; 
@@ -509,4 +509,18 @@ path, circle {
     width: 3px; 
     height: 150px; 
     background-color: #EBEEF5;
+}
+
+@media screen and (max-width: 1480px) {
+    #disclaimer {
+        opacity: 0; 
+    }
+
+    #category-buttons {
+        scale: .75; 
+    }
+
+    #oem-list {
+        width: 18rem; 
+    }
 }
