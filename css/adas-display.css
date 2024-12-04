@@ -510,7 +510,7 @@ path, circle {
     background-color: #EBEEF5;
 }
 
-@media only screen and (max-device-width: 1480px) {
+@media screen and (max-width: 1480px) {
     #disclaimer {
         opacity: 0; 
     }
