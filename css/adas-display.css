@@ -44,9 +44,7 @@ body {
     }; 
 }
 
-a {
-    text-decoration: none;
-}
+a { text-decoration: none; }
 
 #video-container {
     display: flex; 
@@ -66,17 +64,6 @@ a {
     box-shadow: 0px 0px 100px 100px #0D111A inset;
 }
 
-/* #background-video {
-    display: flex; 
-    align-self: center; 
-    justify-items: center; 
-    position: fixed; 
-    min-width: 100%; 
-    min-height: 100%; 
-    z-index: -5;
-    scale: .8;  
-} */
-
 svg {
     width: 1200px; 
     height: 612.5px; 
@@ -85,13 +72,9 @@ svg {
     scale: .75; 
 }
 
-.nav-hidden{
-    animation: slide-out 0.5s forwards; 
-}
+.nav-hidden { animation: slide-out 0.5s forwards; }
 
-.nav-open {
-    animation: slide-in 0.5s forwards; 
-}
+.nav-open { animation: slide-in 0.5s forwards; }
 
 #nav {
     position: absolute;
@@ -132,9 +115,7 @@ svg {
     max-height: 40px; 
 }
 
-#hunter-logo > img {
-    height: 40px;
-}
+#hunter-logo > img { height: 40px; }
 
 #disclaimer {
     z-index: 3; 
@@ -206,10 +187,6 @@ svg {
     top: 1rem; 
 }
 
-/* #category-buttons {
-    scale: .75; 
-} */
-
 #oem-buttons {
     display: flex; 
     flex-direction: column; 
@@ -224,17 +201,11 @@ path, circle {
     border-radius: 2rem; 
 }
 
-#camera {
-    stroke:var(--camera-color); 
-}
+#camera { stroke:var(--camera-color); }
 
-#radar {
-    stroke:var(--radar-color); 
-}
+#radar { stroke:var(--radar-color); }
 
-#ultrasound{
-    stroke:var(--ultrasound-color); 
-}
+#ultrasound{ stroke:var(--ultrasound-color); }
 
 #internal {
     stroke: var(--internal-color); 
@@ -257,13 +228,9 @@ path, circle {
     width: 100%;
 }
 
-.modal-content > h1, .modal-content > h2, .modal-content > h3, .modal-content > h4 {
-    align-self: center; 
-}
+.modal-content > h1, .modal-content > h2, .modal-content > h3, .modal-content > h4 { align-self: center; }
 
-.ds2c-modal > h2 {
-    align-self: center; 
-}
+.ds2c-modal > h2 { align-self: center; }
 
 .content-layout {
     display: flex; 
@@ -274,31 +241,23 @@ path, circle {
     padding: 2rem 0rem; 
 }
 
-.content-layout.column {
-    flex-direction: column; 
-}
+.content-layout.column { flex-direction: column; }
 
-.two-item {
-    width: 49.9%;
-}
+.two-item { width: 49.9%; }
 
 .two-item > img {
     max-width: 100%; 
     max-height: 300px; 
 }
 
-.three-item {
-    width: 33.3%;
-}
+.three-item { width: 33.3%; }
 
 .three-item > img {
     max-width: 100%; 
     max-height: 218px; 
 }
 
-.section {
-    width: 50%; 
-}
+.section { width: 50%; }
 
 .section > img {
     width: 100%; 
@@ -316,18 +275,14 @@ path, circle {
     align-items: center;
 }
 
-.paragraph.vertical > p {
-    text-align: center; 
-}
+.paragraph.vertical > p { text-align: center; }
 
 .oem-hidden {
     display: none; 
     transition: display 2s;
 }
 
-.hidden {
-    opacity: 0; 
-}
+.hidden { opacity: 0; }
 
 .button-row {
     display: flex;
@@ -356,9 +311,7 @@ path, circle {
     max-height: 100%;
 }
 
-.oem-button.two > img {
-    width: 55%;
-}
+.oem-button.two > img { width: 55%; }
 
 .oem-button.three {
     flex-wrap: wrap; 
@@ -375,9 +328,7 @@ path, circle {
     gap: 5px 5px;
 }
 
-.oem-button.four > img {
-    max-width: 30px;
-}
+.oem-button.four > img { max-width: 30px; }
 
 .oem-container {
     display: flex; 
@@ -485,9 +436,7 @@ path, circle {
     background-color: var(--ds2f-default-color); 
 }
 
-.ds2c-columns .ds2s-column {
-    width: 10rem !important; 
-}
+.ds2c-columns .ds2s-column { width: 10rem !important; }
 
 .ds2c-columns .ds2s-column .ds2s-column-subtitle {
     font-size: 1rem !important; 
@@ -499,9 +448,7 @@ path, circle {
     line-height: 2.00000625rem !important; 
 }
 
-.internal .ds2s-column {
-    width: 15rem !important; 
-}
+.internal .ds2s-column { width: 15rem !important; }
 
 .divider {
     width: 3px; 
@@ -510,28 +457,26 @@ path, circle {
 }
 
 @media screen and (max-width: 1480px) {
-    #disclaimer {
-        opacity: 0; 
-    }
+    #disclaimer { opacity: 0; }
 
-    #category-buttons{
-        scale: .75; 
-    }
+    #category-buttons{ scale: .75; }
 
-    #oem-list {
-        width: 18rem; 
-    }
+    #oem-list { width: 18rem; }
 
     .oem-button {
        height: 5rem !important;
        width: 5rem !important;  
     }
 
-    #hunter-logo > img {
-        height: 30px; 
-    }
+    #hunter-logo > img { height: 30px; }
 
-    .button-row {
-        max-width: 800px; 
-    }
+    .button-row { max-width: 800px; }
+}
+
+@media screen and (max-width: 1300px) {
+    #hunter-logo { display: none; }
+
+    svg { scale: .65; }
+
+    #video-container { scale: .7; }
 }
