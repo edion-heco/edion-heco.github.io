@@ -5,7 +5,7 @@
     --internal-color: #BCC1CC; 
 }
 
-html { height: 100vh; }
+html { height: 100dvh; }
 
 body {
     margin: 0 auto; 
@@ -14,7 +14,7 @@ body {
     align-items: center;  
     justify-content: center;
     background-color: #0D111A; 
-    height: 100vh;
+    height: 100dvh;
     font-synthesis: none;
 }
 
@@ -97,7 +97,7 @@ svg {
     position: absolute;
     top: 0; 
     left: 0; 
-    height: 100vh;
+    height: 100dvh;
     max-height: 100%; 
     transform: translateX(-100%); 
     background-color: #0D111A;
@@ -436,7 +436,7 @@ path, circle {
 .dark-gradient-right {
     position: fixed; 
     width: 20rem; 
-    height: 100vh; 
+    height: 100dvh; 
     top: 0; 
     right: 0; 
     background: linear-gradient(to left, #0D111A, #0D111A00);
@@ -452,7 +452,7 @@ path, circle {
     color: #FFFFFF; 
     right: 0; 
     top: 0; 
-    height: 100vh;
+    height: 100dvh;
     width: 25rem;  
     padding-right: 2rem; 
     scale: .75; 
