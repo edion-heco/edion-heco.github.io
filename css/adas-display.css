@@ -531,4 +531,8 @@ path, circle {
     #hunter-logo > img {
         height: 30px; 
     }
+
+    .button-row {
+        max-width: 800px; 
+    }
 }
