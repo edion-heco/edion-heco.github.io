@@ -34,14 +34,64 @@ body {
 
 @keyframes pulse {
     0%, 100% { 
+        opacity: .8; 
         fill-opacity: .75;
         stroke-width: 1px; 
         
     }
     70% { 
+        opacity: 1;
         fill-opacity: 1; 
         stroke-width: 3.25px;
     }; 
+}
+
+@keyframes emphasis {
+    0%, 100% { 
+        opacity: .8; 
+        transform: scale(.9);
+        transform-origin: center center;  
+    }
+    70% { 
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: center center; 
+    }; 
+}
+
+@keyframes beginning {
+    0% {
+        opacity: 100%; 
+    }
+
+    90% {
+        opacity: 95%
+    }
+
+    100% {
+        opacity: 0%;
+        display: none; 
+    }
+}
+
+#introduction {
+    position: absolute;
+    height: 100dvh; 
+    width: 100dvw; 
+    z-index: 50; 
+    background-color: #0D111A75; 
+    display: flex; 
+    flex-direction: column;
+    align-content: center; 
+    align-items: center;
+    justify-content: center; 
+    color: white; 
+    animation: beginning 3s forwards; 
+    vertical-align: middle; 
+}
+
+#introduction > img {
+    animation: emphasis 1s infinite; 
 }
 
 a { text-decoration: none; }
@@ -468,6 +518,10 @@ path, circle {
        width: 5rem !important;  
     }
 
+    .oem-button.four > img {
+        max-width: 23px; 
+    }
+
     #hunter-logo > img { height: 30px; }
 
     .button-row { max-width: 800px; }
@@ -476,7 +530,26 @@ path, circle {
 @media screen and (max-width: 1300px) {
     #hunter-logo { display: none; }
 
-    svg { scale: .65; }
+    body {
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;  
+        align-items: left;  
+        justify-content: flex-start;
+        background-color: #0D111A; 
+        height: 100dvh;
+        font-synthesis: none;
+    }
 
-    #video-container { scale: .7; }
+    svg { 
+        justify-self: left; 
+        transform: scale(.79);
+    }
+
+    #video-container { 
+        position: absolute;
+        top: 0; 
+        transform: scale(.79); 
+        transform-origin: top center;  
+    }
 }
