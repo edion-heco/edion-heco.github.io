@@ -534,22 +534,47 @@ path, circle {
         margin: 0 auto; 
         display: flex;
         flex-direction: column;  
-        align-items: left;  
+        align-items: flex-start;  
         justify-content: flex-start;
         background-color: #0D111A; 
         height: 100dvh;
         font-synthesis: none;
     }
+    
+    #svg-container {
+        height: 100dvh; 
+        width: calc(1200px * .8); 
+        display: flex;
+        align-items: center;  
+        flex-direction: column; 
+        justify-content: center; 
+    }
 
     svg { 
-        justify-self: left; 
-        transform: scale(.79);
+        /* justify-self: flex-start; 
+        transform: scale(.79) translateX(-350px);
+        transform-origin: center center;   */
+        top: 0; 
+        transform: translateX(-350px);
+        transform-origin: center center;  
     }
 
     #video-container { 
         position: absolute;
         top: 0; 
-        transform: scale(.79); 
-        transform-origin: top center;  
+        transform: translateX(-300px);
+        transform-origin: center center;  
+        height: 100dvh; 
+    }
+
+    .shadow {
+        scale: .8; 
+        max-height: none; 
+        top: 0; 
+        width: auto; 
+        transform: translateX(-0px);
+        transform-origin: center center;  
+        height: 100dvh; 
+        aspect-ratio: 14/7; 
     }
 }
