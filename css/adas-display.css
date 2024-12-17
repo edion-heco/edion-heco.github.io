@@ -572,7 +572,7 @@ path, circle {
         max-height: none; 
         top: 0; 
         width: auto; 
-        transform: translateX(-0px);
+        transform: translateX(-300px);
         transform-origin: center center;  
         height: 100dvh; 
         aspect-ratio: 14/7; 
