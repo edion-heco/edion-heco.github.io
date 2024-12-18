@@ -540,6 +540,10 @@ path, circle {
         height: 100dvh;
         font-synthesis: none;
     }
+
+    #heading {
+        transform: translateX(75px); 
+    }
     
     #svg-container {
         height: 99dvh; 
@@ -579,5 +583,12 @@ path, circle {
         transform-origin: center center;  
         height: 100dvh; 
         aspect-ratio: 14/7; 
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #oem-buttons > .button-row {
+        gap: 1rem; 
+        max-width: 700px; 
     }
 }
