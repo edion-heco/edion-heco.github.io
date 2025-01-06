@@ -448,14 +448,21 @@ path, circle {
     display: flex; 
     flex-direction: column; 
     align-content: center; 
-    justify-content: center; 
+    /* justify-content: center;  */
     color: #FFFFFF; 
     right: 0; 
     top: 0; 
     height: 100dvh;
     width: 25rem;  
     padding-right: 2rem; 
-    scale: .75; 
+    overflow-y: scroll; 
+    transform: scale(.75); 
+    transform-origin: center center; 
+    -ms-overflow-style: none;
+}
+
+#oem-list::-webkit-scrollbar {
+    display: none;
 }
 
 #oem-list-items {
@@ -590,5 +597,12 @@ path, circle {
     #oem-buttons > .button-row {
         gap: 1rem; 
         max-width: 700px; 
+    }
+}
+
+@media screen and (max-height: 675px) {
+    #video-container, svg {
+        transform: scale(.7) translateX(-300px); 
+        transform-origin: center center; 
     }
 }
