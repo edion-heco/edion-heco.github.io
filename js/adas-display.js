@@ -85,6 +85,11 @@ async function populateList(oems, data) {
 
                 oemListItems.append(newListItem); 
             }
+
+            let gradient = document.createElement('div');
+            gradient.classList.add("gradient"); 
+
+            oemListItems.append(gradient); 
         });
     }
 }

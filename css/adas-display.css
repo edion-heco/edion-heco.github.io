@@ -448,17 +448,20 @@ path, circle {
     display: flex; 
     flex-direction: column; 
     align-content: center; 
-    /* justify-content: center;  */
+    justify-content: center; 
     color: #FFFFFF; 
     right: 0; 
-    top: 0; 
     height: 100dvh;
     width: 25rem;  
     padding-right: 2rem; 
-    overflow-y: scroll; 
+    /* overflow-y: scroll;  */
     transform: scale(.75); 
     transform-origin: center center; 
     -ms-overflow-style: none;
+}
+
+.gradient {
+    display: none; 
 }
 
 #oem-list::-webkit-scrollbar {
@@ -600,9 +603,37 @@ path, circle {
     }
 }
 
+@media screen and (max-height: 875px) {
+    
+}
+
 @media screen and (max-height: 675px) {
     #video-container, svg {
         transform: scale(.7) translateX(-300px); 
         transform-origin: center center; 
+    } 
+
+    #oem-list {
+        position: absolute; 
+        display: flex; 
+        flex-direction: column; 
+        align-content: center; 
+        justify-content: flex-start; 
+        color: #FFFFFF; 
+        overflow-y: scroll; 
+        transform: scale(.75); 
+        transform-origin: center center; 
+        -ms-overflow-style: none;
+    }
+
+    .gradient {
+        display: flex;
+        content: ''; 
+        z-index: 5; 
+        position: sticky; 
+        bottom: 0px; 
+        height: 50px; 
+        width: 100%; 
+        background: linear-gradient(to bottom,  rgba(13, 17, 26, 0) 0%,rgb(13, 17, 26) 100%);
     }
 }
