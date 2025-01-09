@@ -73,10 +73,10 @@ body {
     99% {
         opacity: 0%;
         display: none; 
-        
     }
 
     100% {
+        opacity: 0%;
         display: none; 
         z-index: -300; 
     }
