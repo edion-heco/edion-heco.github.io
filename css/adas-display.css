@@ -71,6 +71,7 @@ body {
     100% {
         opacity: 0%;
         display: none; 
+        z-index: -100; 
     }
 }
 
@@ -96,6 +97,7 @@ body {
 
 #warning {
     display: none; 
+    z-index: -100; 
 }
 
 a { text-decoration: none; }
