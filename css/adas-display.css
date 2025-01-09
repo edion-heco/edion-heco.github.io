@@ -62,16 +62,23 @@ body {
 @keyframes beginning {
     0% {
         opacity: 100%; 
+        z-index: 5;
     }
 
     90% {
-        opacity: 95%
+        opacity: 95%; 
+        z-index: 5; 
+    }
+
+    99% {
+        opacity: 0%;
+        display: none; 
+        
     }
 
     100% {
-        opacity: 0%;
         display: none; 
-        z-index: -100; 
+        z-index: -300; 
     }
 }
 
